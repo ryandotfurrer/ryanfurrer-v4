@@ -11,7 +11,7 @@
 .light {
   --bg-primary: var(--color-light);
   --bg-secondary: var(--color-light-100);
-  --border: var(--color-light-200);
+  --border: var(--color-light-100);
   --text-primary: var(--color-dark);
   --text-secondary: var(--color-dark-100);
   --text-tertiary: var(--color-dark-200);
@@ -21,7 +21,7 @@
 .dark {
   --bg-primary: var(--color-dark);
   --bg-secondary: var(--color-dark-100);
-  --border: var(--color-dark-200);
+  --border: var(--color-dark-100);
   --text-primary: var(--color-light);
   --text-secondary: var(--color-light-100);
   --text-tertiary: var(--color-light-200);
@@ -40,12 +40,7 @@
   background-color: var(--cta);
 }
 
-.border {
-  border: 2px solid var(--border);
-  color: var(--border);
-}
-
-.hr {
+hr {
   background-color: var(--border);
 }
 
@@ -70,9 +65,29 @@
   padding-right: 5vw;
 }
 
+.padding-x-1 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.padding-x-2 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
 .padding-y {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.padding-y-1 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.padding-y-2 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 * {
@@ -82,6 +97,46 @@
 body {
   background-color: var(--bg-primary);
   max-width: 1200px;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+  }
+}
+
+.underline {
+  background: linear-gradient(currentColor 0 0) bottom / var(--d, 0) 3px
+    no-repeat;
+  transition: 0.3s ease-out;
+}
+.underline:hover {
+  --d: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+.nav-container {
+  .nav {
+    align-items: baseline;
+    display: flex;
+    justify-content: space-between;
+
+    .navlist-container {
+      ul {
+        display: flex;
+      }
+    }
+  }
+}
+
+#projects {
+  background-color: var(--bg-secondary);
 }
 
 .project-image {
@@ -94,4 +149,12 @@ body {
   background-color: cornflowerblue;
   height: 6rem;
   width: 10rem;
+}
+
+aside {
+  background-color: var(--bg-secondary);
+}
+
+.footer-container {
+  border-top: 1px solid var(--border);
 }

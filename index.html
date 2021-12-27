@@ -6,23 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/src/css/css-reset.css">
     <link rel="stylesheet" href="/src/css/styles.css" />
+    <link rel="stylesheet" href="/src/css/media-queries.css">
     <title>Ryan Furrer</title>
   </head>
   <body>
     <div class="nav-container padding-x padding-y">
       <nav class="nav">
         <div>
-          <a href="#"><h1 class="text-primary">Ryan Furrer</h1></a>
+          <h1><a href="#" class="text-primary padding-y-1">Ryan Furrer</a></h1>
         </div>
-        <div>
+        <div class="navlist-container">
           <ul>
-            <li><a href="#" class="text-secondary">Blog</a></li>
-            <li><a href="#" class="text-secondary">Projects</a></li>
-            <li><a href="#" class="text-secondary">About</a></li>
-            <li><a href="#" class="text-secondary">Contact</a></li> <!--Link to page asking if they'd like to email or setup Calendly call, then link to each respective page-->
+            <li><a href="#" class="text-secondary padding-x-2 padding-y-1">Blog</a></li>
+            <li><a href="#" class="text-secondary padding-x-2 padding-y-1">Projects</a></li>
+            <li><a href="#" class="text-secondary padding-x-2 padding-y-1">About</a></li>
+            <li><a href="#" class="text-secondary padding-x-2 padding-y-1">Contact</a></li> <!--Link to page asking if they'd like to email or setup Calendly call, then link to each respective page-->
           </ul>
         </div>
-        <div><button>Change Theme</button></div>
+        <div id="theme-change-btn-container">
+          <button id="theme-change">Change Theme</button>
+        </div>
       </nav>
     </div>
     <div class="header-container padding-x padding-y">
@@ -39,6 +42,7 @@
     </div>
 
     <main class="main padding-x padding-y">
+
       <section id="about">
         <h2 class="text-primary">
           Hi, I'm Ryan Furrer. I'm a Web Developer looking for his first job in
@@ -50,6 +54,7 @@
         </p>
         <a href="#" class="text-primary">Learn more about me</a>
       </section>
+
       <section id="projects">
         <h2 class="text-primary">Projects</h2>
         <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -155,5 +160,6 @@
         </div>
       </div>
     </footer>
+    <script src="/js/theme-change.js"></script>
   </body>
 </html>
