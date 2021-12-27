@@ -1,0 +1,97 @@
+:root {
+  --color-light: #f5f5f5;
+  --color-light-100: #e6ebef;
+  --color-light-200: #c6d3dd;
+  --color-dark: #1c2830;
+  --color-dark-100: #263640;
+  --color-dark-200: #a5bbca;
+  --cta: #f4bb44;
+}
+
+.light {
+  --bg-primary: var(--color-light);
+  --bg-secondary: var(--color-light-100);
+  --border: var(--color-light-200);
+  --text-primary: var(--color-dark);
+  --text-secondary: var(--color-dark-100);
+  --text-tertiary: var(--color-dark-200);
+  --accent: var(--cta);
+}
+
+.dark {
+  --bg-primary: var(--color-dark);
+  --bg-secondary: var(--color-dark-100);
+  --border: var(--color-dark-200);
+  --text-primary: var(--color-light);
+  --text-secondary: var(--color-light-100);
+  --text-tertiary: var(--color-light-200);
+  --accent: var(--cta);
+}
+
+.bg-primary {
+  background-color: var(--bg-primary);
+}
+
+.bg-secondary {
+  background-color: var(--bg-secondary);
+}
+
+.bg-accent {
+  background-color: var(--cta);
+}
+
+.border {
+  border: 2px solid var(--border);
+  color: var(--border);
+}
+
+.hr {
+  background-color: var(--border);
+}
+
+.text-primary {
+  color: var(--text-primary);
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+.text-tertiary {
+  color: var(--text-tertiary);
+}
+
+.text-accent {
+  color: var(--cta);
+}
+
+.padding-x {
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.padding-y {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: var(--bg-primary);
+  max-width: 1200px;
+}
+
+.project-image {
+  background-color: tomato;
+  height: 6rem;
+  width: 10rem;
+}
+
+.blog-image {
+  background-color: cornflowerblue;
+  height: 6rem;
+  width: 10rem;
+}
