@@ -15,3 +15,4 @@
     -Calendly page
 -Link up anchor tags
   -Check that all work
+-Create social card and link up in head meta tags.

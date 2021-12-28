@@ -4,13 +4,31 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/src/css/css-reset.css">
+    <title>Ryan Furrer</title>
+    <!--SEO-->
+    <meta name="description" content="Learn how Ryan Furrer can help bring your projects to life or help you learn how to become a Web Developer.">
+    <meta name="keywords" content="Learn HTML, Learn CSS, Learn JavaScript, Learn React, Dev Journal, Blog, Techincal Blogs, Front End, Front-End, Web Developer">
+    <meta property="og:url" content="https://theryanfurrer.dev">
+    <meta property="og:title" content="Ryan Furrer">
+    <meta property="description" content="Learn how Ryan Furrer can help bring your projects to life or help you learn how to become a Web Developer.">
+    <!--CREATE OWN SOCIAL CARD AND POINT THIS TO THAT CARD-->
+    <meta property="og:image" content="https://kentcdodds.com/img/social?type=1&amp;words=Helping+people+make+the+world+a+better+place+through+quality+software.&amp;img=kentcdodds.com%2Fillustrations%2Fkody-flying_blue&amp;url=kentcdodds.com">
+    <!--TWITTER SEO-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@TheRyanFurrer">
+    <meta name="twitter:site" content="@TheRyanFurrer">
+    <meta name="twitter:title" content="Ryan Furrer">
+    <meta name="twitter:description" content="Learn how Ryan Furrer can help bring your projects to life or help you learn how to become a Web Developer.">
+    <!--CREATE OWN SOCIAL CARD AND POINT THIS TO THAT CARD-->
+    <meta name="twitter:image" content="https://kentcdodds.com/img/social?type=1&amp;words=Helping+people+make+the+world+a+better+place+through+quality+software.&amp;img=kentcdodds.com%2Fillustrations%2Fkody-flying_blue&amp;url=kentcdodds.com">
+    <meta name="twitter:alt" content="Ryan Furrer">
+    <link rel="canonical" href="https://theryanfurrer.dev">
     <link rel="stylesheet" href="/src/css/styles.css" />
     <link rel="stylesheet" href="/src/css/media-queries.css">
-    <title>Ryan Furrer</title>
   </head>
+
   <body class="m-auto bg-primary">
-    <div class="nav-container padding-x padding-y">
+    <div class="nav-container">
       <nav class="nav">
         <div>
           <h1><a href="#" class="text-primary padding-y-1">Ryan Furrer</a></h1>
@@ -24,11 +42,11 @@
           </ul>
         </div>
         <div id="theme-change-btn-container">
-          <button id="theme-change">Change Theme</button>
+          <button id="theme-change" legend="Theme Switcher">Change Theme</button>
         </div>
       </nav>
     </div>
-    <div class="header-container padding-x padding-y">
+    <div class="header-container margin-x-wrapper padding-y">
       <header class="header">
         <div id="header-text" class="text-primary">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas harum
@@ -41,9 +59,9 @@
       </header>
     </div>
 
-    <main class="main padding-x padding-y">
+    <main class="main">
 
-      <section id="about">
+      <section id="about" class="margin-x-wrapper">
         <h2 class="text-primary">
           Hi, I'm Ryan Furrer. I'm a Web Developer looking for his first job in
           the field.
@@ -87,7 +105,7 @@
         </div>
       </section>
 
-      <section id="blog">
+      <section id="blog" class="margin-x-wrapper">
         <h2 class="text-primary">Blog recommendations</h2>
         <p class="text-secondary">From technical articles to devjournal entries.</p>
         <div id="blog-articles-container">
@@ -110,7 +128,7 @@
         <a href="#" class="text-primary">Read more</a>
       </section>
 
-      <aside>
+      <aside class="margin-x-wrapper">
         <h2 class="text-primary">Want to know more?</h2>
         <p class="text-secondary">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos,
@@ -160,6 +178,7 @@
         </div>
       </div>
     </footer>
+
     <script src="js/get-current-year.js"></script>
     <script src="/js/theme-change.js"></script>
   </body>

@@ -64,13 +64,31 @@ a {
   color: inherit;
 }
 
+p {
+  max-width: 35rem;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+button {
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  cursor: pointer;
+  line-height: 0;
+}
+
 .m-auto {
   margin: 0 auto;
 }
 
-.padding-x {
-  padding-left: 5vw;
-  padding-right: 5vw;
+.margin-x-wrapper {
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
 
 .padding-x-1 {
@@ -103,7 +121,11 @@ a {
 }
 
 body {
-  max-width: 1200px;
+  max-width: 160ch;
+  padding: 0.75rem;
+  --duration: 0.7s;
+  --timing: ease;
+  transition: color var(--duration) var(--timing), background-color var(--duration) var(--timing);
 }
 
 a {

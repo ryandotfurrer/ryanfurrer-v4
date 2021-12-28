@@ -1,0 +1,9 @@
+/*
+  If the user has expressed their preference for
+  reduced motion, then don't use animations on buttons.
+*/
+@media (prefers-reduced-motion: reduce) {
+  button {
+    animation: none;
+  }
+}
