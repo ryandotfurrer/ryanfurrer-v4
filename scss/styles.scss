@@ -60,6 +60,14 @@ hr {
   color: var(--cta);
 }
 
+a {
+  color: inherit;
+}
+
+.m-auto {
+  margin: 0 auto;
+}
+
 .padding-x {
   padding-left: 5vw;
   padding-right: 5vw;

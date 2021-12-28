@@ -148,3 +148,10 @@ Remove the inner padding in Chrome and Safari on macOS.
   -webkit-appearance: button; /* 1 */
   font: inherit; /* 2 */
 }
+/*
+Enables Sticky Footer (stays at bottom of page no matter what
+*/
+body > footer {
+  position: sticky;
+  top: 100vh;
+}
