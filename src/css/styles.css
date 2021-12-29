@@ -180,8 +180,6 @@ aside {
   background-color: var(--bg-secondary);
 }
 
-.footer-container {
+#footer .footer-container {
   border-top: 1px solid var(--border);
-  display: flex;
-  justify-content: space-between;
 }
