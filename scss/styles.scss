@@ -2,9 +2,11 @@
 :root {
   --color-light: #f5f5f5;
   --color-light-100: #e6ebef;
+  --color-light-150: #d6dfe6;
   --color-light-200: #c6d3dd;
   --color-dark: #1c2830;
   --color-dark-100: #263640;
+  --color-dark-150: #354650;
   --color-dark-200: #a5bbca;
   --cta: #f4bb44;
 }
@@ -14,6 +16,7 @@
 .light {
   --bg-primary: var(--color-light);
   --bg-secondary: var(--color-light-100);
+  --bg-tertiary: var(--color-light-150);
   --border: var(--color-light-100);
   --text-primary: var(--color-dark);
   --text-secondary: var(--color-dark-100);
@@ -26,6 +29,7 @@
 .dark {
   --bg-primary: var(--color-dark);
   --bg-secondary: var(--color-dark-100);
+  --bg-tertiary: var(--color-dark-150);
   --border: var(--color-dark-100);
   --text-primary: var(--color-light);
   --text-secondary: var(--color-light-100);
@@ -83,7 +87,8 @@ h3 {
   line-height: 1.2;
 }
 
-button {
+button,
+i {
   background: none;
   border: none;
   color: var(--text-primary);
@@ -136,6 +141,36 @@ li {
     .navlist-container {
       ul {
         display: flex;
+
+        li {
+          a {
+            display: block;
+            height: 100%;
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    #nav-btn-container {
+      display: flex;
+      align-items: center;
+
+      #theme-change {
+        border: 2px solid var(--text-tertiary);
+        border-radius: 100%;
+        color: var(--text-primary);
+        font-size: 1.5rem;
+        text-align: center;
+      }
+
+      #hamburger {
+        display: hidden;
+        padding: 0;
+
+        .bar {
+          display: hidden;
+        }
       }
     }
   }
@@ -164,5 +199,16 @@ aside {
 #footer {
   .footer-container {
     border-top: 1px solid var(--border);
+
+    #social-links {
+      align-items: baseline;
+      display: flex;
+      gap: 1.25rem;
+
+      a {
+        font-size: 1.75rem;
+        text-decoration: none;
+      }
+    }
   }
 }

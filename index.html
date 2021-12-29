@@ -26,27 +26,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/dec2579292.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/src/css/utility-classes.css">
     <link rel="stylesheet" href="/src/css/styles.css" />
     <link rel="stylesheet" href="/src/css/media-queries.css">
   </head>
 
   <body class="m-auto bg-primary padding-x-2">
-    <div class="nav-container">
+    <div class="nav-container padding-y-section-outside">
       <nav class="nav">
         <div>
           <h1><a href="#" class="text-primary">Ryan Furrer</a></h1>
         </div>
         <div class="navlist-container">
-          <ul>
-            <li><a href="#" class="text-secondary padding-x-2 ">Blog</a></li>
-            <li><a href="#" class="text-secondary padding-x-2 ">Projects</a></li>
-            <li><a href="#" class="text-secondary padding-x-2 ">About</a></li>
-            <li><a href="#" class="text-secondary padding-x-2 ">Contact</a></li> <!--Link to page asking if they'd like to email or setup Calendly call, then link to each respective page-->
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#" class="nav-link text-secondary padding-x-2 ">Projects</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-secondary padding-x-2 ">Blog</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-secondary padding-x-2 ">About</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-secondary padding-x-2 ">Contact</a></li> <!--Link to page asking if they'd like to email or setup Calendly call, then link to each respective page-->
           </ul>
         </div>
-        <div id="theme-change-btn-container">
-          <button id="theme-change" legend="Theme Switcher">Change Theme</button>
+        <div id="nav-btn-container">
+          <button id="theme-change" legend="Theme Switcher" class="padding-x-1 padding-y-1 far fa-sun fa-flip-horizontal">
+          </button>
+          <button id="hamburger" legend="Mobile Menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
         </div>
       </nav>
     </div>
@@ -149,10 +156,10 @@
           <p class="text-primary">Ryan Furrer</p>
           <p class="text-secondary">Front-End Web Developer</p>
           <div id="social-links">
-            <a href="#"  class="text-primary"target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a href="#"  class="text-primary"target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href="#"  class="text-primary"target="_blank" rel="noopener noreferrer">Twitter</a>
-            <a href="#"  class="text-primary"target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="#"  class="text-primary fab fa-github"target="_blank" rel="noopener noreferrer"></a>
+            <a href="#"  class="text-primary fab fa-linkedin"target="_blank" rel="noopener noreferrer"></a>
+            <a href="#"  class="text-primary fab fa-twitter"target="_blank" rel="noopener noreferrer"></a>
+            <a href="#"  class="text-primary fab fa-instagram"target="_blank" rel="noopener noreferrer"></a>
         </div>
 
         <div id="contact">
@@ -186,5 +193,6 @@
 
     <script src="js/get-current-year.js"></script>
     <script src="/js/theme-change.js"></script>
+    <script src="/js/mobile-menu.js"></script>
   </body>
 </html>
