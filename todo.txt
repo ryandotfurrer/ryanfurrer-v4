@@ -1,6 +1,6 @@
-[]Create remaining utiilty classes for layout and spacing
-  []margin
-  []padding
+[x]Create remaining utiilty classes for layout and spacing
+  [x]margin
+  [x]padding
 []Create Mobile Menu
   []Create button for mobile Menu
   []Create JavaScript for button
