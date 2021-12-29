@@ -14,6 +14,32 @@
   }
 }
 
+/* @media (prefers-color-scheme: dark) {
+  .dark {
+    --bg-primary: var(--color-dark);
+    --bg-secondary: var(--color-dark-100);
+    --bg-tertiary: var(--color-dark-150);
+    --border: var(--color-dark-100);
+    --text-primary: var(--color-light);
+    --text-secondary: var(--color-light-100);
+    --text-tertiary: var(--color-light-200);
+    --accent: var(--cta);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .light {
+    --bg-primary: var(--color-light);
+    --bg-secondary: var(--color-light-100);
+    --bg-tertiary: var(--color-light-150);
+    --border: var(--color-light-100);
+    --text-primary: var(--color-dark);
+    --text-secondary: var(--color-dark-100);
+    --text-tertiary: var(--color-dark-200);
+    --accent: var(--cta);
+  }
+} */
+
 @media only screen and (max-width: 768px) {
   .nav-list {
     position: fixed;

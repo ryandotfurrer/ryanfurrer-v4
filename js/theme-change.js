@@ -4,7 +4,7 @@ function changeTheme() {
 
   btn.addEventListener('click', () => {
     if (html.className === 'light') {
-      html.classList.toggle('dark');
+      html.classList.add('dark');
       btn.classList.remove('fa-sun');
       btn.classList.add('fa-moon');
     } else {

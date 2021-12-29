@@ -7,13 +7,14 @@
   [x]Create mobile breakpoints for navigation
   []Make entire navigation link clickable on mobile
 [x]Decide on typography
+[x]Style Theme Change button
+[]Style Footer
+[x]Add icons for social links in footer
 []Replace any Lorem Ipsum
-[]Adjust sizing and colors as needed
 []Style CTA links
   []2 in Header
   []1 in "Want to know more?" section
-[x]Style Theme Change button
-[]Style Footer
+[]Adjust sizing and colors as needed
 []Create pages
   []Contact
     []Email form

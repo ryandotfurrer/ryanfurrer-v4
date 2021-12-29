@@ -13,29 +13,29 @@
 
 // Assigns Light Theme colors to appropriate colors
 // .light class is on HTML element by default
-.light {
-  --bg-primary: var(--color-light);
-  --bg-secondary: var(--color-light-100);
-  --bg-tertiary: var(--color-light-150);
-  --border: var(--color-light-100);
-  --text-primary: var(--color-dark);
-  --text-secondary: var(--color-dark-100);
-  --text-tertiary: var(--color-dark-200);
-  --accent: var(--cta);
-}
+// .light {
+//   --bg-primary: var(--color-light);
+//   --bg-secondary: var(--color-light-100);
+//   --bg-tertiary: var(--color-light-150);
+//   --border: var(--color-light-100);
+//   --text-primary: var(--color-dark);
+//   --text-secondary: var(--color-dark-100);
+//   --text-tertiary: var(--color-dark-200);
+//   --accent: var(--cta);
+// }
 
 // Assigns Dark Theme colors to appropriate colors
 // .dark class is added onto the HTML element via theme-change.js in the js folder
-.dark {
-  --bg-primary: var(--color-dark);
-  --bg-secondary: var(--color-dark-100);
-  --bg-tertiary: var(--color-dark-150);
-  --border: var(--color-dark-100);
-  --text-primary: var(--color-light);
-  --text-secondary: var(--color-light-100);
-  --text-tertiary: var(--color-light-200);
-  --accent: var(--cta);
-}
+// .dark {
+//   --bg-primary: var(--color-dark);
+//   --bg-secondary: var(--color-dark-100);
+//   --bg-tertiary: var(--color-dark-150);
+//   --border: var(--color-dark-100);
+//   --text-primary: var(--color-light);
+//   --text-secondary: var(--color-light-100);
+//   --text-tertiary: var(--color-light-200);
+//   --accent: var(--cta);
+// }
 
 // Assign classes with proper CSS rules and appropriate variables for themes
 // Background Colors
@@ -153,8 +153,8 @@ li {
     }
 
     #nav-btn-container {
-      display: flex;
       align-items: center;
+      display: flex;
 
       #theme-change {
         border: 2px solid var(--text-tertiary);
