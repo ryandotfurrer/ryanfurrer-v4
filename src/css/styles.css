@@ -40,6 +40,10 @@
   background-color: var(--bg-secondary);
 }
 
+.bg-tertiary {
+  background-color: var(--bg-tertiary);
+}
+
 .bg-accent {
   background-color: var(--cta);
 }
@@ -87,6 +91,10 @@ i {
   line-height: 0;
 }
 
+.block {
+  display: block;
+}
+
 * {
   font-family: 'Outfit', Helvetica, Arial, sans-serif;
 }
@@ -104,7 +112,11 @@ a {
 
 a:hover {
   text-decoration: underline;
-  text-underline-offset: 0.5rem;
+  text-underline-offset: 0.3rem;
+}
+
+main section p a:hover {
+  text-underline-offset: 0;
 }
 
 .underline {
@@ -137,8 +149,8 @@ li {
 }
 
 .nav-container .nav #nav-btn-container {
-  display: flex;
   align-items: center;
+  display: flex;
 }
 
 .nav-container .nav #nav-btn-container #theme-change {
@@ -180,6 +192,9 @@ aside {
 
 #footer .footer-container {
   border-top: 1px solid var(--border);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 0.5rem;
 }
 
 #footer .footer-container #social-links {
@@ -191,4 +206,50 @@ aside {
 #footer .footer-container #social-links a {
   font-size: 1.75rem;
   text-decoration: none;
+}
+
+#footer .footer-container .two-col-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#footer .footer-container .two-col-grid #contact a {
+  display: block;
+}
+
+#footer .footer-container .two-col-grid #contact a:not(:last-of-type) {
+  padding-bottom: 0.5rem;
+}
+
+#footer .footer-container .two-col-grid #sitemap ul {
+  padding-left: 0;
+}
+
+#footer .footer-container .two-col-grid #sitemap ul li a {
+  display: block;
+}
+
+#footer .footer-container .two-col-grid #sitemap ul li:not(:last-of-type) {
+  margin-bottom: 0.5rem;
+}
+
+#footer .footer-container #newsletter > p:nth-of-type(2) {
+  padding-bottom: 0.75rem;
+}
+
+#footer .footer-container #newsletter #revue-embed form div label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+#footer .footer-container #newsletter #revue-embed form div input {
+  border: 1px solid var(--bg-secondary);
+}
+
+#footer .footer-container #newsletter #revue-embed form div:not(:first-of-type) {
+  padding-top: 1rem;
+}
+
+#footer .footer-container #newsletter #revue-embed .revue-form-footer > p {
+  margin: 0;
 }

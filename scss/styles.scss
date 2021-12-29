@@ -13,29 +13,29 @@
 
 // Assigns Light Theme colors to appropriate colors
 // .light class is on HTML element by default
-// .light {
-//   --bg-primary: var(--color-light);
-//   --bg-secondary: var(--color-light-100);
-//   --bg-tertiary: var(--color-light-150);
-//   --border: var(--color-light-100);
-//   --text-primary: var(--color-dark);
-//   --text-secondary: var(--color-dark-100);
-//   --text-tertiary: var(--color-dark-200);
-//   --accent: var(--cta);
-// }
+.light {
+  --bg-primary: var(--color-light);
+  --bg-secondary: var(--color-light-100);
+  --bg-tertiary: var(--color-light-150);
+  --border: var(--color-light-100);
+  --text-primary: var(--color-dark);
+  --text-secondary: var(--color-dark-100);
+  --text-tertiary: var(--color-dark-200);
+  --accent: var(--cta);
+}
 
 // Assigns Dark Theme colors to appropriate colors
 // .dark class is added onto the HTML element via theme-change.js in the js folder
-// .dark {
-//   --bg-primary: var(--color-dark);
-//   --bg-secondary: var(--color-dark-100);
-//   --bg-tertiary: var(--color-dark-150);
-//   --border: var(--color-dark-100);
-//   --text-primary: var(--color-light);
-//   --text-secondary: var(--color-light-100);
-//   --text-tertiary: var(--color-light-200);
-//   --accent: var(--cta);
-// }
+.dark {
+  --bg-primary: var(--color-dark);
+  --bg-secondary: var(--color-dark-100);
+  --bg-tertiary: var(--color-dark-150);
+  --border: var(--color-dark-100);
+  --text-primary: var(--color-light);
+  --text-secondary: var(--color-light-100);
+  --text-tertiary: var(--color-light-200);
+  --accent: var(--cta);
+}
 
 // Assign classes with proper CSS rules and appropriate variables for themes
 // Background Colors
@@ -45,6 +45,10 @@
 
 .bg-secondary {
   background-color: var(--bg-secondary);
+}
+
+.bg-tertiary {
+  background-color: var(--bg-tertiary);
 }
 
 .bg-accent {
@@ -96,6 +100,10 @@ i {
   line-height: 0;
 }
 
+.block {
+  display: block;
+}
+
 // Basic body styles
 * {
   font-family: 'Outfit', Helvetica, Arial, sans-serif;
@@ -115,7 +123,17 @@ a {
 
   &:hover {
     text-decoration: underline;
-    text-underline-offset: 0.5rem;
+    text-underline-offset: 0.3rem;
+  }
+}
+
+main {
+  section {
+    p {
+      a:hover {
+        text-underline-offset: 0;
+      }
+    }
   }
 }
 
@@ -199,6 +217,9 @@ aside {
 #footer {
   .footer-container {
     border-top: 1px solid var(--border);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 0.5rem;
 
     #social-links {
       align-items: baseline;
@@ -208,6 +229,65 @@ aside {
       a {
         font-size: 1.75rem;
         text-decoration: none;
+      }
+    }
+
+    .two-col-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      #contact {
+        a {
+          display: block;
+
+          &:not(:last-of-type) {
+            padding-bottom: 0.5rem;
+          }
+        }
+      }
+
+      #sitemap {
+        ul {
+          padding-left: 0;
+
+          li {
+            a {
+              display: block;
+            }
+          }
+
+          li:not(:last-of-type) {
+            margin-bottom: 0.5rem;
+          }
+        }
+      }
+    }
+
+    #newsletter {
+      > p:nth-of-type(2) {
+        padding-bottom: 0.75rem;
+      }
+      #revue-embed {
+        form {
+          div {
+            label {
+              display: inline-block;
+              margin-bottom: 0.5rem;
+            }
+            input {
+              border: 1px solid var(--bg-secondary);
+            }
+          }
+          div:not(:first-of-type) {
+            padding-top: 1rem;
+          }
+        }
+
+        .revue-form-footer {
+          > p {
+            margin: 0;
+          }
+        }
       }
     }
   }
