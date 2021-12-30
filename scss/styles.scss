@@ -8,7 +8,8 @@
   --color-dark-100: #263640;
   --color-dark-150: #354650;
   --color-dark-200: #a5bbca;
-  --cta: #f4bb44;
+  --cta-dark: #f4bb44;
+  --cta-light: #9d5600;
   font-size: 18px;
 }
 
@@ -22,7 +23,7 @@
   --text-primary: var(--color-dark);
   --text-secondary: var(--color-dark-100);
   --text-tertiary: var(--color-dark-200);
-  --accent: var(--cta);
+  --accent: var(--cta-light);
 }
 
 // Assigns Dark Theme colors to appropriate colors
@@ -35,7 +36,12 @@
   --text-primary: var(--color-light);
   --text-secondary: var(--color-light-100);
   --text-tertiary: var(--color-light-200);
-  --accent: var(--cta);
+  --accent: var(--cta-dark);
+}
+
+section,
+aside {
+  border-radius: 0.5rem;
 }
 
 // Assign classes with proper CSS rules and appropriate variables for themes
@@ -75,7 +81,7 @@ hr {
 }
 
 .text-accent {
-  color: var(--cta);
+  color: var(--accent);
 }
 
 a {
@@ -303,8 +309,28 @@ li {
   width: 10rem;
 }
 
-aside {
+#cta {
+  align-items: center;
   background-color: var(--bg-secondary);
+  display: flex;
+  flex-direction: column;
+
+  a {
+    background-color: var(--text-primary);
+    border: 2px solid transparent;
+    border-radius: 15rem;
+    color: var(--bg-primary);
+    display: block;
+    margin-top: 1rem;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    transition: border 0.3s ease;
+
+    &:hover {
+      border-color: var(--color-dark-200);
+    }
+  }
 }
 
 #footer {
@@ -313,6 +339,7 @@ aside {
     display: grid;
     grid-template-columns: 1fr;
     grid-row-gap: 0.5rem;
+    padding-top: 3rem;
 
     #social-links {
       align-items: baseline;
