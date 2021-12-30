@@ -73,9 +73,25 @@
 }
 
 @media only screen and (min-width: 769px) {
+  h1 {
+    font-size: 1.802rem;
+  }
+
+  h2 {
+    font-size: 1.602rem;
+  }
+
+  h3 {
+    font-size: 1.424rem;
+  }
   #header {
     grid-template-columns: 3fr 2fr;
-    padding-bottom: 10rem;
+    /* padding-bottom: 10rem; */
+    gap: 0 6vw;
+  }
+
+  #header-text {
+    padding-top: 0;
   }
 
   #about {
@@ -96,5 +112,23 @@
 
   #footer .footer-container {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  h1 {
+    font-size: 3.052rem;
+  }
+
+  h2 {
+    font-size: 2.441rem;
+  }
+
+  h3 {
+    font-size: 1.953rem;
+  }
+
+  .text-lg {
+    font-size: 1.25rem;
   }
 }

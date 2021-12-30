@@ -36,6 +36,11 @@
   padding-bottom: 1rem;
 }
 
+.padding-y-med {
+  padding-top: 2.5rem;
+  padding-bottom: 1.75rem;
+}
+
 .padding-y-section-outside-lg {
   padding-top: 4rem;
   padding-bottom: 2.25rem;
