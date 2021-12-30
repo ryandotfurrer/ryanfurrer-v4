@@ -115,7 +115,6 @@
   }
 
   #blog #blog-articles-container {
-    align-items: baseline;
     grid-template-columns: 1fr 1fr;
     gap: 1.5rem 1.5rem;
   }

@@ -151,6 +151,10 @@ li {
   list-style: none;
 }
 
+.nav-container {
+  padding-top: 1.5rem;
+}
+
 .nav-container .nav {
   align-items: baseline;
   display: flex;
@@ -198,6 +202,7 @@ li {
   align-items: start;
   display: grid;
   grid-template-columns: 1fr;
+  padding-bottom: 3rem;
 }
 
 #header #header-text h2 {
@@ -254,6 +259,7 @@ li {
 
 #about #about-text-container h2 {
   margin: 0;
+  padding-bottom: 1.5rem;
 }
 
 #about #about-text-container > a {
@@ -319,9 +325,6 @@ li {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.5rem 0;
-}
-
-#blog-container #blog-articles-container div:first-of-type {
   margin-top: 2.5rem;
 }
 

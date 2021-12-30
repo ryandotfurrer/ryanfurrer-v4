@@ -170,6 +170,7 @@ li {
 }
 
 .nav-container {
+  padding-top: 1.5rem;
   .nav {
     align-items: baseline;
     display: flex;
@@ -222,6 +223,7 @@ li {
   align-items: start;
   display: grid;
   grid-template-columns: 1fr;
+  padding-bottom: 3rem;
   #header-text {
     h2 {
       margin-top: 0;
@@ -279,6 +281,8 @@ li {
   #about-text-container {
     h2 {
       margin: 0;
+      padding-bottom: 1.5rem;
+      // color: red;
     }
     > a {
       display: block;
@@ -338,10 +342,7 @@ li {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.5rem 0;
-
-    div:first-of-type {
-      margin-top: 2.5rem;
-    }
+    margin-top: 2.5rem;
     div {
       border-radius: 0.5rem;
       padding: 1rem;
