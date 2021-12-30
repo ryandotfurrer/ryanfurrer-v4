@@ -98,6 +98,7 @@ sup {
 Correct the inability to style clickable types in iOS and Safari.
 */
 button,
+input,
 [type='button'],
 [type='reset'],
 [type='submit'] {

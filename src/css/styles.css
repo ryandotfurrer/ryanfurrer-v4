@@ -159,6 +159,11 @@ li {
   color: var(--text-primary);
   font-size: 1.5rem;
   text-align: center;
+  transition: border-color 0.3s ease;
+}
+
+.nav-container .nav #nav-btn-container #theme-change:hover {
+  border-color: var(--text-primary);
 }
 
 .nav-container .nav #nav-btn-container #hamburger {
@@ -168,6 +173,41 @@ li {
 
 .nav-container .nav #nav-btn-container #hamburger .bar {
   display: hidden;
+}
+
+#header #header-links a {
+  border: 2px solid transparent;
+  border-radius: 15rem;
+  display: block;
+  max-width: 35%;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  transition: border 0.3s ease;
+}
+
+#header #header-links a:first-of-type {
+  color: var(--bg-primary);
+  background-color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+#header #header-links a:first-of-type:hover {
+  border-color: var(--color-dark-200);
+}
+
+#header #header-links a:last-of-type {
+  border-color: var(--text-tertiary);
+  color: var(--text-primary);
+}
+
+#header #header-links a:last-of-type:hover {
+  border-color: var(--text-primary);
+}
+
+#about img {
+  display: block;
+  width: 75%;
 }
 
 #projects {

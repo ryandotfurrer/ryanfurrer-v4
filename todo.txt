@@ -22,5 +22,5 @@
     []Calendly page
 []Link up anchor tags
   []Check that all work
-  []Implement embeded Revue signup form in footer
+  [x]Implement embeded Revue signup form in footer
 -Create social card and link up in head meta tags.

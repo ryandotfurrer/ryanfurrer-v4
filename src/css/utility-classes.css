@@ -31,9 +31,13 @@
 }
 
 /* Padding on the y-axis */
-.padding-y-section-outside {
-  padding-top: 2rem;
-  padding-bottom: 1.75rem;
+.padding-y-section-outside-sm {
+  padding-top: 2.75rem;
+  padding-bottom: 1.5rem;
+}
+.padding-y-section-outside-lg {
+  padding-top: 4rem;
+  padding-bottom: 2.25rem;
 }
 
 .padding-y-section-inside {

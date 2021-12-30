@@ -180,6 +180,11 @@ li {
         color: var(--text-primary);
         font-size: 1.5rem;
         text-align: center;
+        transition: border-color 0.3s ease;
+
+        &:hover {
+          border-color: var(--text-primary);
+        }
       }
 
       #hamburger {
@@ -191,6 +196,48 @@ li {
         }
       }
     }
+  }
+}
+
+#header {
+  // height: 100vh;
+  #header-links {
+    a {
+      border: 2px solid transparent;
+      border-radius: 15rem;
+      display: block;
+      max-width: 35%;
+      padding: 1rem 1.5rem;
+      text-align: center;
+      text-decoration: none;
+      transition: border 0.3s ease;
+    }
+
+    a:first-of-type {
+      color: var(--bg-primary);
+      background-color: var(--text-primary);
+      margin-bottom: 1rem;
+
+      &:hover {
+        border-color: var(--color-dark-200);
+      }
+    }
+
+    a:last-of-type {
+      border-color: var(--text-tertiary);
+      color: var(--text-primary);
+
+      &:hover {
+        border-color: var(--text-primary);
+      }
+    }
+  }
+}
+
+#about {
+  img {
+    display: block;
+    width: 75%;
   }
 }
 
