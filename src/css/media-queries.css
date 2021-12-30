@@ -115,6 +115,12 @@
     width: 60%;
   }
 
+  #blog #blog-articles-container {
+    align-items: baseline;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem 1.5rem;
+  }
+
   #cta {
     margin: 0 auto;
     max-width: 65%;
@@ -153,5 +159,9 @@
 
   #header > #header-text > #header-links a {
     width: 10rem;
+  }
+  #blog #blog-articles-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    /* gap: 0 1.5rem; */
   }
 }
