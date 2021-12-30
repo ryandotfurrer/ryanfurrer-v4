@@ -331,10 +331,6 @@ li {
   transition: background-color 0.3s ease;
 }
 
-#blog-container #blog-articles-container div:last-of-type {
-  margin-bottom: 1rem;
-}
-
 #blog-container #blog-articles-container div:hover {
   background-color: var(--bg-secondary);
 }

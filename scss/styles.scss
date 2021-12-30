@@ -347,10 +347,6 @@ li {
       padding: 1rem;
       transition: background-color 0.3s ease;
 
-      &:last-of-type {
-        margin-bottom: 1rem;
-      }
-
       &:hover {
         background-color: var(--bg-secondary);
       }
