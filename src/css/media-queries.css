@@ -145,4 +145,13 @@
   #cta {
     max-width: 50%;
   }
+
+  #header,
+  #about {
+    min-height: 60vh;
+  }
+
+  #header > #header-text > #header-links a {
+    width: 10rem;
+  }
 }

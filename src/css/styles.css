@@ -345,7 +345,7 @@ li {
 }
 
 #footer .footer-container .two-col-grid a {
-  color: var(--text-tertiary);
+  color: var(--text-secondary);
   transition: color 0.3s ease;
 }
 

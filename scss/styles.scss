@@ -371,7 +371,7 @@ li {
       grid-template-columns: 1fr 1fr;
 
       a {
-        color: var(--text-tertiary);
+        color: var(--text-secondary);
         transition: color 0.3s ease;
         &:hover {
           color: var(--text-primary);
