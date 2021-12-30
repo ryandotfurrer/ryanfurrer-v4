@@ -115,6 +115,11 @@
     width: 60%;
   }
 
+  #cta {
+    margin: 0 auto;
+    max-width: 65%;
+  }
+
   #footer .footer-container {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -135,5 +140,9 @@
 
   .text-lg {
     font-size: 1.25rem;
+  }
+
+  #cta {
+    max-width: 50%;
   }
 }

@@ -13,7 +13,7 @@
 []Replace any Lorem Ipsum
 []Style CTA links
   [x]2 in Header
-  []1 in "Want to know more?" section
+  [x]1 in "Want to know more?" section
 []Style newsletter form
 []Adjust sizing and colors as needed
 []Create pages
