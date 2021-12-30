@@ -92,6 +92,14 @@ p {
   max-width: 35rem;
 }
 
+.p-lg {
+  font-size: 1.15rem;
+}
+
+.p-xl {
+  font-size: 1.25rem;
+}
+
 h1,
 h2,
 h3 {
@@ -228,7 +236,7 @@ li {
         text-align: center;
         text-decoration: none;
         transition: background-color 0.3s ease, border 0.3s ease;
-        width: 8rem;
+        width: 10rem;
       }
 
       a:first-of-type {
