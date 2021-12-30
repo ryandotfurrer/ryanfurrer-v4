@@ -383,7 +383,7 @@ li {
   border-top: 1px solid var(--border);
   display: grid;
   grid-template-columns: 1fr;
-  grid-row-gap: 0.5rem;
+  gap: 0.5rem;
   margin-top: 6rem;
   padding-top: 3rem;
 }
@@ -485,4 +485,12 @@ li {
 
 #footer .footer-container #newsletter #revue-embed .revue-form-footer > p {
   margin: 0;
+}
+
+#footer .footer-container #newsletter #revue-embed .revue-form-footer a {
+  text-underline-offset: 0;
+}
+
+#footer #legal p a {
+  text-underline-offset: 0;
 }

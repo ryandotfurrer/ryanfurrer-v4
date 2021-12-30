@@ -15,7 +15,8 @@
   [x]2 in Header
   [x]1 in "Want to know more?" section
 [x]Style newsletter form
-[]Adjust sizing and colors as needed
+[]Adjust sizing as needed
+[]Adjust colors as needed
 []Create pages
   []Contact
     []Email form

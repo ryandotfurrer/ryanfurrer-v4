@@ -401,7 +401,7 @@ li {
     border-top: 1px solid var(--border);
     display: grid;
     grid-template-columns: 1fr;
-    grid-row-gap: 0.5rem;
+    gap: 0.5rem;
     margin-top: 6rem;
     padding-top: 3rem;
 
@@ -516,8 +516,16 @@ li {
           > p {
             margin: 0;
           }
+
+          a {
+            text-underline-offset: 0;
+          }
         }
       }
     }
+  }
+
+  #legal p a {
+    text-underline-offset: 0;
   }
 }
