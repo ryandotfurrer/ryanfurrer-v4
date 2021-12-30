@@ -5,16 +5,16 @@
   [x]Create button for mobile Menu
   [x]Create JavaScript for button
   [x]Create mobile breakpoints for navigation
-  []Make entire navigation link clickable on mobile
+  [x]Make entire navigation link clickable on mobile
 [x]Decide on typography
 [x]Style Theme Change button
 [x]Style Footer
 [x]Add icons for social links in footer
 []Replace any Lorem Ipsum
-[]Style CTA links
+[x]Style CTA links
   [x]2 in Header
   [x]1 in "Want to know more?" section
-[]Style newsletter form
+[x]Style newsletter form
 []Adjust sizing and colors as needed
 []Create pages
   []Contact

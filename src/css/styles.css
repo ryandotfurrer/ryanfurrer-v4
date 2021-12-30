@@ -317,13 +317,24 @@ li {
   padding-top: 3rem;
 }
 
-#footer .footer-container #social-links {
+#footer .footer-container #footer-name p {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+#footer .footer-container #footer-name p:not(:first-of-type) {
+  margin-bottom: 1rem;
+  color: var(--text-tertiary);
+}
+
+#footer .footer-container #footer-name #social-links {
   align-items: baseline;
   display: flex;
   gap: 1.25rem;
+  margin-bottom: 1.5rem;
 }
 
-#footer .footer-container #social-links a {
+#footer .footer-container #footer-name #social-links a {
   font-size: 1.75rem;
   text-decoration: none;
 }
@@ -333,16 +344,31 @@ li {
   grid-template-columns: 1fr 1fr;
 }
 
+#footer .footer-container .two-col-grid a {
+  color: var(--text-tertiary);
+  transition: color 0.3s ease;
+}
+
+#footer .footer-container .two-col-grid a:hover {
+  color: var(--text-primary);
+}
+
+#footer .footer-container .two-col-grid #contact > p,
+#footer .footer-container .two-col-grid #sitemap > p {
+  margin-bottom: 0.5rem;
+}
+
 #footer .footer-container .two-col-grid #contact a {
   display: block;
 }
 
 #footer .footer-container .two-col-grid #contact a:not(:last-of-type) {
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.25rem;
 }
 
 #footer .footer-container .two-col-grid #sitemap ul {
   padding-left: 0;
+  margin-top: 0;
 }
 
 #footer .footer-container .two-col-grid #sitemap ul li a {
@@ -350,11 +376,7 @@ li {
 }
 
 #footer .footer-container .two-col-grid #sitemap ul li:not(:last-of-type) {
-  margin-bottom: 0.5rem;
-}
-
-#footer .footer-container #newsletter > p:nth-of-type(2) {
-  padding-bottom: 0.75rem;
+  padding-bottom: 0.25rem;
 }
 
 #footer .footer-container #newsletter #revue-embed form div label {
@@ -363,7 +385,22 @@ li {
 }
 
 #footer .footer-container #newsletter #revue-embed form div input {
-  border: 1px solid var(--bg-secondary);
+  border-radius: 0.5rem;
+  border: none;
+  padding: 2rem;
+  font-size: inherit;
+  color: var(--text-primary);
+}
+
+#footer .footer-container #newsletter #revue-embed form div #member_submit {
+  background-color: var(--text-secondary);
+  color: var(--bg-primary);
+  cursor: pointer;
+  padding: 1rem 2rem;
+}
+
+#footer .footer-container #newsletter #revue-embed form div #member_submit:hover {
+  background-color: var(--text-primary);
 }
 
 #footer .footer-container #newsletter #revue-embed form div:not(:first-of-type) {

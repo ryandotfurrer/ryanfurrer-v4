@@ -343,14 +343,26 @@ li {
     margin-top: 6rem;
     padding-top: 3rem;
 
-    #social-links {
-      align-items: baseline;
-      display: flex;
-      gap: 1.25rem;
+    #footer-name {
+      p {
+        font-size: 1.25rem;
+        margin: 0;
+      }
+      p:not(:first-of-type) {
+        margin-bottom: 1rem;
+        color: var(--text-tertiary);
+      }
 
-      a {
-        font-size: 1.75rem;
-        text-decoration: none;
+      #social-links {
+        align-items: baseline;
+        display: flex;
+        gap: 1.25rem;
+        margin-bottom: 1.5rem;
+
+        a {
+          font-size: 1.75rem;
+          text-decoration: none;
+        }
       }
     }
 
@@ -358,12 +370,27 @@ li {
       display: grid;
       grid-template-columns: 1fr 1fr;
 
+      a {
+        color: var(--text-tertiary);
+        transition: color 0.3s ease;
+        &:hover {
+          color: var(--text-primary);
+        }
+      }
+
+      #contact,
+      #sitemap {
+        > p {
+          margin-bottom: 0.5rem;
+        }
+      }
+
       #contact {
         a {
           display: block;
 
           &:not(:last-of-type) {
-            padding-bottom: 0.5rem;
+            padding-bottom: 0.25rem;
           }
         }
       }
@@ -371,6 +398,7 @@ li {
       #sitemap {
         ul {
           padding-left: 0;
+          margin-top: 0;
 
           li {
             a {
@@ -379,7 +407,7 @@ li {
           }
 
           li:not(:last-of-type) {
-            margin-bottom: 0.5rem;
+            padding-bottom: 0.25rem;
           }
         }
       }
@@ -387,7 +415,6 @@ li {
 
     #newsletter {
       > p:nth-of-type(2) {
-        padding-bottom: 0.75rem;
       }
       #revue-embed {
         form {
@@ -397,7 +424,22 @@ li {
               margin-bottom: 0.5rem;
             }
             input {
-              border: 1px solid var(--bg-secondary);
+              border-radius: 0.5rem;
+              border: none;
+              padding: 2rem;
+              font-size: inherit;
+              color: var(--text-primary);
+            }
+
+            #member_submit {
+              background-color: var(--text-secondary);
+              color: var(--bg-primary);
+              cursor: pointer;
+              padding: 1rem 2rem;
+
+              &:hover {
+                background-color: var(--text-primary);
+              }
             }
           }
           div:not(:first-of-type) {
