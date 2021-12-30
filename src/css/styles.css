@@ -8,6 +8,7 @@
   --color-dark-150: #354650;
   --color-dark-200: #a5bbca;
   --cta: #f4bb44;
+  font-size: 20px;
 }
 
 .light {
@@ -95,12 +96,16 @@ i {
   display: block;
 }
 
+.i-block {
+  display: inline-block;
+}
+
 * {
   font-family: 'Outfit', Helvetica, Arial, sans-serif;
 }
 
 body {
-  max-width: 155ch;
+  max-width: 140ch;
   --duration: 0.7s;
   --timing: ease;
   transition: color var(--duration) var(--timing), background-color var(--duration) var(--timing);
@@ -216,9 +221,41 @@ li {
   border-color: var(--text-primary);
 }
 
-#about img {
+#about {
+  align-items: start;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4vh 0;
+}
+
+#about #profile-img-container img {
+  border-radius: 50%;
   display: block;
-  width: 75%;
+  max-width: 100%;
+}
+
+#about #about-text-container h2 {
+  margin: 0;
+}
+
+#about #about-text-container > a {
+  display: block;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#about #about-text-container > a:hover {
+  color: var(--text-primary);
+}
+
+#about #about-text-container > a i {
+  color: var(--text-tertiary);
+  padding-left: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+#about #about-text-container > a i:hover {
+  color: var(--text-primary);
 }
 
 #projects {

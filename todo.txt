@@ -12,7 +12,7 @@
 [x]Add icons for social links in footer
 []Replace any Lorem Ipsum
 []Style CTA links
-  []2 in Header
+  [x]2 in Header
   []1 in "Want to know more?" section
 []Style newsletter form
 []Adjust sizing and colors as needed

@@ -9,6 +9,7 @@
   --color-dark-150: #354650;
   --color-dark-200: #a5bbca;
   --cta: #f4bb44;
+  font-size: 20px;
 }
 
 // Assigns Light Theme colors to appropriate colors
@@ -104,13 +105,17 @@ i {
   display: block;
 }
 
+.i-block {
+  display: inline-block;
+}
+
 // Basic body styles
 * {
   font-family: 'Outfit', Helvetica, Arial, sans-serif;
 }
 
 body {
-  max-width: 155ch;
+  max-width: 140ch;
 
   --duration: 0.7s;
   --timing: ease;
@@ -241,9 +246,42 @@ li {
 }
 
 #about {
-  img {
-    display: block;
-    width: 75%;
+  align-items: start;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4vh 0;
+
+  #profile-img-container {
+    img {
+      border-radius: 50%;
+      display: block;
+      max-width: 100%;
+    }
+  }
+
+  #about-text-container {
+    h2 {
+      margin: 0;
+    }
+    > a {
+      display: block;
+      text-decoration: none;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: var(--text-primary);
+      }
+
+      i {
+        color: var(--text-tertiary);
+        padding-left: 0.5rem;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: var(--text-primary);
+        }
+      }
+    }
   }
 }
 

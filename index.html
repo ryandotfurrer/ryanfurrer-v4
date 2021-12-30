@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="light dark">
+<html lang="en" class="light">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -99,7 +99,7 @@
           <button
             id="theme-change"
             legend="Theme Switcher"
-            class="padding-x-1 padding-y-1 far fa-moon fa-flip-horizontal"
+            class="padding-x-1 padding-y-1 far fa-sun fa-flip-horizontal"
           ></button>
           <button id="hamburger" legend="Mobile Menu">
             <span class="bar"></span>
@@ -110,13 +110,13 @@
       </nav>
     </div>
 
-    <div class="header-container margin-x-wrapper padding-y-section-outside-lg">
+    <div class="header-container margin-x-wrapper padding-y-5">
       <header id="header">
-        <div id="header-image-container">
+        <div id="header-image-container padding-y-section-inside">
           <img
-            src="/images/header-dark.svg"
+            src="/images/header-light.svg"
             alt="Person sitting on desk with computer"
-            media="(prefers-color-scheme: dark)"
+            media="(prefers-color-scheme: light)"
             id="header-image"
           />
         </div>
@@ -134,24 +134,34 @@
     </div>
 
     <main class="main">
-      <section id="about" class="margin-x-wrapper padding-y-section-outside-lg">
-        <img
-          src="/images/profile-pic-orange.jpg"
-          alt="Ryan Furrer"
-          class="m-auto"
-        />
-        <h2 class="text-primary">
-          Hi, I'm Ryan Furrer. I'm a Web Developer looking for his first job in
-          the field.
-        </h2>
-        <p class="text-secondary">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima
-          exercitationem reiciendis eos? Deleniti ad illum dolore corporis quis.
-        </p>
-        <a href="#" class="text-primary">Learn more about me</a>
+      <section id="about" class="margin-x-wrapper padding-y-section-outside-xl">
+        <div id="about-text-container">
+          <h2 class="text-primary">
+            Hi, I'm Ryan Furrer. I'm a Web Developer looking for his first job
+            in the field.
+          </h2>
+          <p class="text-secondary">
+            Web Development has become a passion of mine only recently, though I
+            have always been intertested in it. When I am not working or coding
+            I like to read, arrange music, and more.
+          </p>
+          <a href="#" class="text-tertiary"
+            >Learn more about me <i class="fas fa-chevron-circle-right"></i
+          ></a>
+        </div>
+        <div id="profile-img-container">
+          <img
+            src="/images/profile-pic-orange.jpg"
+            alt="Ryan Furrer"
+            class="m-auto"
+          />
+        </div>
       </section>
 
-      <section id="projects">
+      <section
+        id="projects"
+        class="margin-y-section-outside-xl padding-x-2 padding-y-2"
+      >
         <h2 class="text-primary">Projects</h2>
         <p class="text-secondary">
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -185,7 +195,7 @@
         </div>
       </section>
 
-      <section id="blog" class="margin-x-wrapper">
+      <section id="blog" class="margin-x-wrapper padding-y-section-outside-xl">
         <h2 class="text-primary">Blog recommendations</h2>
         <p class="text-secondary">
           From technical articles to devjournal entries.
@@ -210,7 +220,12 @@
         <a href="#" class="text-primary">Read more</a>
       </section>
 
-      <aside class="margin-x-wrapper">
+      <aside
+        class="
+          margin-x-wrapper margin-y-section-outside-xl
+          padding-x-2 padding-y-2
+        "
+      >
         <h2 class="text-primary">Want to know more?</h2>
         <p class="text-secondary">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos,
