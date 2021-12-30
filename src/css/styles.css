@@ -207,17 +207,18 @@ li {
   padding: 1rem 1.5rem;
   text-align: center;
   text-decoration: none;
-  transition: border 0.3s ease;
+  transition: background-color 0.3s ease, border 0.3s ease;
   width: 8rem;
 }
 
 #header #header-text #header-links a:first-of-type {
   color: var(--bg-primary);
-  background-color: var(--text-primary);
+  background-color: var(--text-secondary);
   margin-bottom: 1rem;
 }
 
 #header #header-text #header-links a:first-of-type:hover {
+  background-color: var(--text-primary);
   border-color: var(--color-dark-200);
 }
 
@@ -277,6 +278,10 @@ li {
   width: 10rem;
 }
 
+#blog-container {
+  padding-bottom: 6rem;
+}
+
 #blog-container > p > a {
   font-weight: bolder;
   transition: color 0.3s ease;
@@ -312,8 +317,23 @@ li {
   margin-top: 2.5rem;
 }
 
+#blog-container #blog-articles-container div {
+  border-radius: 0.5rem;
+  padding: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+#blog-container #blog-articles-container div:last-of-type {
+  margin-bottom: 1rem;
+}
+
+#blog-container #blog-articles-container div:hover {
+  background-color: var(--bg-secondary);
+}
+
 #blog-container #blog-articles-container div .blog-image {
   border-radius: 0.5rem;
+  transition: border-radius 0.3s ease;
   width: 100%;
 }
 
@@ -334,7 +354,7 @@ li {
 }
 
 #cta a {
-  background-color: var(--text-primary);
+  background-color: var(--text-secondary);
   border: 2px solid transparent;
   border-radius: 15rem;
   color: var(--bg-primary);
@@ -343,10 +363,11 @@ li {
   padding: 1rem 1.5rem;
   text-align: center;
   text-decoration: none;
-  transition: border 0.3s ease;
+  transition: background-color 0.3s ease, border 0.3s ease;
 }
 
 #cta a:hover {
+  background-color: var(--text-primary);
   border-color: var(--color-dark-200);
 }
 

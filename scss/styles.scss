@@ -227,16 +227,17 @@ li {
         padding: 1rem 1.5rem;
         text-align: center;
         text-decoration: none;
-        transition: border 0.3s ease;
+        transition: background-color 0.3s ease, border 0.3s ease;
         width: 8rem;
       }
 
       a:first-of-type {
         color: var(--bg-primary);
-        background-color: var(--text-primary);
+        background-color: var(--text-secondary);
         margin-bottom: 1rem;
 
         &:hover {
+          background-color: var(--text-primary);
           border-color: var(--color-dark-200);
         }
       }
@@ -304,6 +305,7 @@ li {
 }
 
 #blog-container {
+  padding-bottom: 6rem;
   > p > a {
     font-weight: bolder;
     transition: color 0.3s ease;
@@ -333,8 +335,20 @@ li {
       margin-top: 2.5rem;
     }
     div {
+      border-radius: 0.5rem;
+      padding: 1rem;
+      transition: background-color 0.3s ease;
+
+      &:last-of-type {
+        margin-bottom: 1rem;
+      }
+
+      &:hover {
+        background-color: var(--bg-secondary);
+      }
       .blog-image {
         border-radius: 0.5rem;
+        transition: border-radius 0.3s ease;
         width: 100%;
       }
     }
@@ -356,7 +370,7 @@ li {
   margin-top: 6rem;
 
   a {
-    background-color: var(--text-primary);
+    background-color: var(--text-secondary);
     border: 2px solid transparent;
     border-radius: 15rem;
     color: var(--bg-primary);
@@ -365,9 +379,10 @@ li {
     padding: 1rem 1.5rem;
     text-align: center;
     text-decoration: none;
-    transition: border 0.3s ease;
+    transition: background-color 0.3s ease, border 0.3s ease;
 
     &:hover {
+      background-color: var(--text-primary);
       border-color: var(--color-dark-200);
     }
   }
