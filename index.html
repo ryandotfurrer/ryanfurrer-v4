@@ -59,10 +59,7 @@
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
-    <script
-      src="https://kit.fontawesome.com/dec2579292.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://unpkg.com/phosphor-icons"></script>
     <link rel="stylesheet" href="/src/css/utility-classes.css" />
     <link rel="stylesheet" href="/src/css/styles.css" />
     <link rel="stylesheet" href="/src/css/media-queries.css" />
@@ -99,7 +96,7 @@
           <button
             id="theme-change"
             legend="Theme Switcher"
-            class="padding-x-1 padding-y-1 far fa-sun fa-flip-horizontal"
+            class="padding-x-1 padding-y-1 ph-sun"
           ></button>
           <button id="hamburger" legend="Mobile Menu">
             <span class="bar"></span>
@@ -145,10 +142,12 @@
             have always been intertested in it. When I am not working or coding
             I like to read, arrange music, and more.
           </p>
-          <a href="#" class="text-tertiary p-lg"
-            >Learn more about me
-            <i class="fas fa-chevron-circle-right p-lg"></i
-          ></a>
+          <div class="read-more-container">
+            <a href="#" class="text-tertiary p-lg"
+              >Learn more about me</a>
+            <a href="#">
+              <i class="ph-arrow-circle-right text-tertiary"></i></a>
+          </div>
         </div>
         <div id="profile-img-container">
           <img
@@ -228,10 +227,12 @@
             </a>
             </div>
           </div>
-          <a href="#" class="text-tertiary p-lg"
-            >Read more blogs
-            <i class="fas fa-chevron-circle-right p-lg text-tertiary"></i
-          ></a>
+          <div class="read-more-container">
+            <a href="#" class="text-tertiary p-lg"
+              >Read more blogs</a>
+            <a href="#">
+              <i class="ph-arrow-circle-right text-tertiary"></i></a>
+          </div>
         </div>
       </section>
 

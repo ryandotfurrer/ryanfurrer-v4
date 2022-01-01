@@ -17,6 +17,7 @@
 [x]Style newsletter form
 [x]Fix layout issue in blog section in Safari
   -Concerns breakpoints and align-items
+[]Style Projects section
 []Adjust sizing as needed
 []Adjust colors as needed
 []Create pages
@@ -26,4 +27,5 @@
 []Link up anchor tags
   []Check that all work
   [x]Implement embeded Revue signup form in footer
+[]Use JavaScript to append external-link arrow to any links with the target attribute of "_blank"
 -Create social card and link up in head meta tags.

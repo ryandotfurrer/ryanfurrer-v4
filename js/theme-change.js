@@ -6,13 +6,13 @@ function changeTheme() {
   btn.addEventListener('click', () => {
     if (html.className === 'light') {
       html.classList.add('dark');
-      btn.classList.remove('fa-sun');
-      btn.classList.add('fa-moon');
+      btn.classList.remove('ph-sun');
+      btn.classList.add('ph-moon');
       headerImage.src = '/images/header-dark.svg';
     } else {
       html.classList.remove('dark');
-      btn.classList.remove('fa-moon');
-      btn.classList.add('fa-sun');
+      btn.classList.remove('ph-moon');
+      btn.classList.add('ph-sun');
       headerImage.src = '/images/header-light.svg';
     }
   });
