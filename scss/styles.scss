@@ -1,47 +1,45 @@
 // Establish base colors using CSS Variables
 :root {
-  --color-light: #f5f5f5;
-  --color-light-100: #e6ebef;
-  --color-light-150: #d6dfe6;
-  --color-light-200: #c6d3dd;
-  --color-dark: #1c2830;
-  --color-dark-100: #263640;
-  --color-dark-150: #354650;
-  --color-dark-200: #a5bbca;
-  --cta-dark: #f4bb44;
-  --cta-light: #9d5600;
+  --color-light-100: #f5f5f5;
+  --color-light-150: #cdd8e0;
+  --color-light-200: #a5bbca;
+
+  --color-dark-100: #556c77;
+  --color-dark-150: #263640;
+  --color-dark-200: #1c2830;
+
+  --color-accent-100: #f4bb44;
+  --color-accent-200: #f2ad18;
   font-size: 18px;
 }
 
 // Assigns Light Theme colors to appropriate colors
 // .light class is on HTML element by default
 .light {
-  --bg-primary: var(--color-light);
-  --bg-secondary: var(--color-light-100);
-  --bg-tertiary: var(--color-light-150);
-  --border: var(--color-light-100);
-  --text-primary: var(--color-dark);
-  --text-secondary: var(--color-dark-100);
-  --text-tertiary: var(--color-dark-200);
-  --accent: var(--cta-light);
+  --bg-primary: var(--color-light-100); //#F5F5F5
+  --bg-secondary: var(--color-light-150); //#C6D3DD
+  --bg-tertiary: var(--color-light-200); //#a5bbca
+  --text-primary: var(--color-dark-200); //#1C2830
+  --text-secondary: var(--color-dark-100); //#556C77
 }
 
 // Assigns Dark Theme colors to appropriate colors
 // .dark class is added onto the HTML element via theme-change.js in the js folder
 .dark {
-  --bg-primary: var(--color-dark);
-  --bg-secondary: var(--color-dark-100);
-  --bg-tertiary: var(--color-dark-150);
-  --border: var(--color-dark-100);
-  --text-primary: var(--color-light);
-  --text-secondary: var(--color-light-100);
-  --text-tertiary: var(--color-light-200);
-  --accent: var(--cta-dark);
+  --bg-primary: var(--color-dark-200); //#1C2830;
+  --bg-secondary: var(--color-dark-150); //#556C77;
+  --bg-tertiary: var(--color-dark-100); //#263640;
+  --text-primary: var(--color-light-100); //#F5F5F5;
+  --text-secondary: var(--color-light-200); //#C6D3DD;
 }
 
 section,
 aside {
   border-radius: 0.5rem;
+}
+
+.light-font {
+  font-weight: 300;
 }
 
 // Assign classes with proper CSS rules and appropriate variables for themes
@@ -59,12 +57,12 @@ aside {
 }
 
 .bg-accent {
-  background-color: var(--cta);
+  background-color: var(--color-accent-100);
 }
 
 // <hr> divider styling
 hr {
-  background-color: var(--border);
+  background-color: var(--bg-tertiary);
 }
 
 // Text styling
@@ -74,14 +72,6 @@ hr {
 
 .text-secondary {
   color: var(--text-secondary);
-}
-
-.text-tertiary {
-  color: var(--text-tertiary);
-}
-
-.text-accent {
-  color: var(--accent);
 }
 
 a {
@@ -156,15 +146,6 @@ main {
   }
 }
 
-.underline {
-  background: linear-gradient(currentColor 0 0) bottom / var(--d, 0) 3px
-    no-repeat;
-  transition: 0.3s ease-out;
-}
-.underline:hover {
-  --d: 100%;
-}
-
 li {
   list-style: none;
 }
@@ -179,12 +160,18 @@ li {
     .navlist-container {
       ul {
         display: flex;
+        padding-left: 0;
 
         li {
           a {
             display: block;
             height: 100%;
+            transition: color 0.3s ease;
             width: 100%;
+
+            &:hover {
+              color: var(--text-primary);
+            }
           }
         }
       }
@@ -195,7 +182,7 @@ li {
       display: flex;
 
       #theme-change {
-        border: 2px solid var(--text-tertiary);
+        border: 2px solid var(--text-secondary);
         border-radius: 100%;
         color: var(--text-primary);
         font-size: 1.5rem;
@@ -242,18 +229,19 @@ li {
       }
 
       a:first-of-type {
-        color: var(--bg-primary);
-        background-color: var(--text-secondary);
+        background-color: var(--color-accent-100);
+        border-color: var(--color-accent-200);
+        color: var(--color-dark-200);
         margin-bottom: 1rem;
 
         &:hover {
-          background-color: var(--text-primary);
+          background-color: var(--color-accent-200);
           border-color: var(--color-dark-200);
         }
       }
 
       a:last-of-type {
-        border-color: var(--text-tertiary);
+        border-color: var(--text-secondary);
         color: var(--text-primary);
 
         &:hover {
@@ -315,10 +303,6 @@ li {
   }
 }
 
-#projects {
-  background-color: var(--bg-secondary);
-}
-
 .project-image {
   background-color: tomato;
   height: 6rem;
@@ -377,10 +361,10 @@ li {
   margin-top: 6rem;
 
   a {
-    background-color: var(--text-secondary);
+    background-color: var(--color-accent-100);
     border: 2px solid transparent;
     border-radius: 15rem;
-    color: var(--bg-primary);
+    color: var(--color-dark-200);
     display: block;
     margin-top: 1rem;
     padding: 1rem 1.5rem;
@@ -389,7 +373,7 @@ li {
     transition: background-color 0.3s ease, border 0.3s ease;
 
     &:hover {
-      background-color: var(--text-primary);
+      background-color: var(--color-accent-200);
       border-color: var(--color-dark-200);
     }
   }
@@ -416,7 +400,7 @@ li {
       }
       p:not(:first-of-type) {
         margin-bottom: 1rem;
-        color: var(--text-tertiary);
+        color: var(--text-secondary);
       }
 
       #social-links {
@@ -497,9 +481,11 @@ li {
 
             #member_submit {
               background-color: var(--text-secondary);
+              border-radius: 10rem;
               color: var(--bg-primary);
               cursor: pointer;
               padding: 1rem 2rem;
+              transition: background-color 0.3s ease;
 
               &:hover {
                 background-color: var(--text-primary);
@@ -513,6 +499,7 @@ li {
 
         .revue-form-footer {
           > p {
+            line-height: 1;
             margin: 0;
           }
 
