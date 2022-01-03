@@ -275,10 +275,89 @@ li {
   padding-bottom: 1.5rem;
 }
 
-.project-image {
-  background-color: tomato;
-  height: 6rem;
-  width: 10rem;
+#projects .wrapper {
+  padding-left: 4vw;
+  padding-right: 4vw;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+#projects .wrapper .tabs .tablist {
+  border-bottom: 1px solid var(--text-secondary);
+  display: flex;
+  gap: 0 1.5rem;
+  margin-bottom: 1rem;
+}
+
+#projects .wrapper .tabs .tablist button {
+  margin: 0;
+  padding: 0;
+}
+
+#projects .wrapper .tabs .tablist button {
+  border-bottom: 2px solid transparent;
+  color: var(--text-secondary);
+  font-size: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+#projects .wrapper .tabs .tablist button[aria-selected='true'] {
+  border-color: var(--text-primary);
+  color: var(--text-primary);
+}
+
+#projects .wrapper .tabs .project-panel {
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+#projects .wrapper .tabs .project-panel .project-image {
+  border-radius: 0.5rem;
+  width: 50%;
+}
+
+#projects .wrapper .tabs .project-panel .project-name {
+  line-height: 0;
+  margin-bottom: 2rem;
+}
+
+#projects .wrapper .tabs .project-panel p {
+  margin-bottom: 1rem;
+}
+
+#projects .wrapper .tabs .project-panel .project-links {
+  display: flex;
+  gap: 0.5rem;
+}
+
+#projects .wrapper .tabs .project-panel .project-links a {
+  border: 2px solid var(--text-secondary);
+  border-radius: 15rem;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  transition: border-color 0.3s ease;
+  width: 4rem;
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+#projects .wrapper .tabs .project-panel .project-links a:first-of-type {
+  background-color: var(--text-secondary);
+  color: var(--bg-primary);
+}
+
+#projects .wrapper .tabs .project-panel .project-links a:first-of-type:hover {
+  background-color: var(--text-primary);
+  color: var(--bg-primary);
+}
+
+#projects .wrapper .tabs .project-panel .project-links a:hover {
+  border-color: var(--text-primary);
+  color: var(--text-primary);
+  text-decoration: none;
 }
 
 #blog-container {
@@ -331,11 +410,12 @@ li {
 }
 
 #cta {
-  align-items: center;
+  align-items: left;
   background-color: var(--bg-secondary);
   display: flex;
   flex-direction: column;
   margin-top: 6rem;
+  padding-bottom: 2rem;
 }
 
 #cta a {
@@ -349,6 +429,7 @@ li {
   text-align: center;
   text-decoration: none;
   transition: background-color 0.3s ease, border 0.3s ease;
+  width: 10rem;
 }
 
 #cta a:hover {

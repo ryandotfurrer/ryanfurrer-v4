@@ -107,7 +107,7 @@
       </nav>
     </div>
 
-    <div class="header-container margin-x-wrapper padding-y-section-outside-lg">
+    <div class="header-container margin-x-wrapper padding-y-section-outside-xl">
       <header id="header">
         <div id="header-image-container">
           <img
@@ -157,42 +157,70 @@
           />
         </div>
       </section>
-
-      <section
-        id="projects"
-        class="margin-y-section-outside-xl padding-x-2 padding-y-2 bg-secondary"
-      >
-        <div id="projects-container">
+      <section id="projects" class="bg-secondary margin-y-section-outside-xl  padding-y-1">
+        <div class="wrapper">
           <h2 class="text-primary">Projects</h2>
-          <p class="text-primary light-font">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          <p class="text-primary light-font p-lg">
+            Below are a few of my projects built with various technologies, but all rooted in being modern, accessible, and using the best practices known to me. Each project contains a link to the demo site and code, which is hosted on GitHub.
           </p>
-          <div class="project-1">
-            <div class="project-image"></div>
-            <h3 class="text-primary">Project #1</h3>
-            <p class="text-primary light-font">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Distinctio quos reprehenderit vitae obcaecati harum a esse magnam
-              beatae impedit nemo.
-            </p>
-          </div>
-          <div class="project-2">
-            <div class="project-image"></div>
-            <h3 class="text-primary">Project #1</h3>
-            <p class="text-primary light-font">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Distinctio quos reprehenderit vitae obcaecati harum a esse magnam
-              beatae impedit nemo.
-            </p>
-          </div>
-          <div class="project-2">
-            <div class="project-image"></div>
-            <h3 class="text-primary">Project #1</h3>
-            <p class="text-primary light-font">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Distinctio quos reprehenderit vitae obcaecati harum a esse magnam
-              beatae impedit nemo.
-            </p>
+          <div class="tabs">
+            <div class="tablist" role="tablist" aria-label="Web Development Projects">
+              <button role="tab" aria-selected="true" id="project-1">
+                Project 1
+              </button>
+              <button role="tab" aria-selected="false" id="project-2">
+                Project 2
+              </button>
+              <button role="tab" aria-selected="false" id="project-3">
+                Project 3
+              </button>
+            </div>
+            <div class="project-panel" role="tabpanel" aria-labelledby="project-1">
+              <img src="/images/profile-pic-orange.jpg" alt="" class="project-image">
+              <h3 class="project-name text-primary">Project #1</h3>
+              <p class="project-description text-primary light-font">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Distinctio quos reprehenderit vitae obcaecati harum a esse magnam
+                beatae impedit nemo.
+              </p>
+              <p class="project-description text-primary light-font">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Distinctio quos reprehenderit vitae obcaecati harum a esse magnam
+                beatae impedit nemo.
+              </p>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener noreferrer">Live Site</a>
+                <a href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
+              </div>
+            </div>
+            <div class="project-panel"role="tabpanel" aria-labelledby="project-2" hidden>
+              <img src="/images/profile-pic-orange.jpg" alt="" class="project-image">
+              <h3 class="project-name text-primary">Project #2</h3>
+              <p class="project-description text-primary light-font">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Distinctio quos reprehenderit vitae obcaecati harum a esse magnam
+                beatae impedit nemo.
+              </p>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener noreferrer">Live Site</a>
+                <a href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
+              </div>
+            </div>
+            <div class="project-panel" role="tabpanel" aria-labelledby="project-3" hidden>
+              <img src="/images/profile-pic-orange.jpg" alt="" class="project-image">
+              <h3 class="project-name text-primary">Project #3</h3>
+              <p class="project-description text-primary light-font">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Distinctio quos reprehenderit vitae obcaecati harum a esse magnam
+                beatae impedit nemo.
+              </p>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener noreferrer">Live Site</a>
+                <a href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
+              </div>
+            </div>
+
+            </div>
           </div>
         </div>
       </section>
@@ -329,6 +357,7 @@
                   type="text"
                   name="member[first_name]"
                   id="member_first_name"
+                  autocapitalize="on"
                 />
               </div>
               <div class="revue-form-group">
@@ -391,5 +420,6 @@
     <script src="js/get-current-year.js"></script>
     <script src="/js/theme-change.js"></script>
     <script src="/js/mobile-menu.js"></script>
+    <script src="/js/project-tab.js"></script>
   </body>
 </html>
