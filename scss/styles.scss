@@ -328,7 +328,11 @@ li {
           font-size: 1rem;
           padding-top: 1rem;
           padding-bottom: 1rem;
-          transition: border-color 0.3s ease;
+          transition: border-color 0.3s ease, color 0.3s ease;
+
+          &:hover {
+            color: var(--text-primary);
+          }
         }
 
         button[aria-selected='true'] {
@@ -351,12 +355,13 @@ li {
           margin-bottom: 2rem;
         }
 
-        p {
-          margin-bottom: 1rem;
+        p:last-of-type {
+          margin-bottom: 1.5rem;
         }
         .project-links {
           display: flex;
-          gap: 0.5rem;
+          flex-direction: column;
+          gap: 0.5rem 0;
 
           a {
             border: 2px solid var(--text-secondary);
@@ -562,6 +567,7 @@ li {
               padding: 2rem;
               font-size: inherit;
               color: var(--text-primary);
+              background-color: #e1e7eb;
             }
 
             #member_submit {

@@ -80,6 +80,10 @@
   #about-text-container a {
     margin-bottom: 1rem;
   }
+
+  #cta > p {
+    font-size: 1.15rem;
+  }
 }
 
 @media only screen and (min-width: 769px) {
@@ -137,7 +141,8 @@
 
   #cta {
     margin: 0 auto;
-    max-width: 60ch;
+    padding: 4vw;
+    max-width: 65%;
   }
 
   #footer .footer-container {
@@ -172,32 +177,42 @@
   }
 
   #projects .wrapper {
+    grid-row-gap: 0px;
     padding-left: 3rem;
     padding-right: 3rem;
   }
+
+  #projects .wrapper .tabs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 3rem;
+  }
+
+  #projects .wrapper .projects-header {
+    grid-area: 1 / 1 / 2 / 2;
+  }
   #projects .wrapper .tabs .tablist {
-    border-bottom: 1px solid var(--text-secondary);
+    border: none;
     display: flex;
-    gap: 0 1.5rem;
-    margin-bottom: 1rem;
+    flex-direction: column;
+    justify-self: center;
+    font-style: 1rem;
+    gap: 3rem;
+    grid-area: 2 / 1 / 3 / 2;
   }
+
   #projects .wrapper .tabs .tablist button {
-    margin: 0;
-    padding: 0;
-  }
-  #projects .wrapper .tabs .tablist button {
-    border-bottom: 2px solid transparent;
+    border: none;
     color: var(--text-secondary);
-    font-size: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    transition: border-color 0.3s ease;
+    font-size: 2rem;
   }
   #projects .wrapper .tabs .tablist button[aria-selected='true'] {
-    border-color: var(--text-primary);
+    border: none;
     color: var(--text-primary);
   }
   #projects .wrapper .tabs .project-panel {
+    grid-area: 1 / 2 / 3 / 3;
     padding-top: 1.5rem;
     padding-bottom: 1rem;
   }
@@ -244,5 +259,9 @@
 
   #blog #blog-articles-container {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  #cta {
+    max-width: 35%;
   }
 }

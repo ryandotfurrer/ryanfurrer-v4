@@ -300,7 +300,11 @@ li {
   font-size: 1rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  transition: border-color 0.3s ease;
+  transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+#projects .wrapper .tabs .tablist button:hover {
+  color: var(--text-primary);
 }
 
 #projects .wrapper .tabs .tablist button[aria-selected='true'] {
@@ -323,13 +327,14 @@ li {
   margin-bottom: 2rem;
 }
 
-#projects .wrapper .tabs .project-panel p {
-  margin-bottom: 1rem;
+#projects .wrapper .tabs .project-panel p:last-of-type {
+  margin-bottom: 1.5rem;
 }
 
 #projects .wrapper .tabs .project-panel .project-links {
   display: flex;
-  gap: 0.5rem;
+  flex-direction: column;
+  gap: 0.5rem 0;
 }
 
 #projects .wrapper .tabs .project-panel .project-links a {
@@ -524,6 +529,7 @@ li {
   padding: 2rem;
   font-size: inherit;
   color: var(--text-primary);
+  background-color: #e1e7eb;
 }
 
 #footer .footer-container #newsletter #revue-embed form div #member_submit {
