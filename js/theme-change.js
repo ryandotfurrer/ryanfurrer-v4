@@ -8,12 +8,12 @@ function changeTheme() {
       html.classList.add('dark');
       btn.classList.remove('ph-sun');
       btn.classList.add('ph-moon');
-      headerImage.src = '/images/header-dark.svg';
+      headerImage.src = '/images/portfolio-image-light.png';
     } else {
       html.classList.remove('dark');
       btn.classList.remove('ph-moon');
       btn.classList.add('ph-sun');
-      headerImage.src = '/images/header-light.svg';
+      headerImage.src = '/images/portfolio-image-dark.png';
     }
   });
 }

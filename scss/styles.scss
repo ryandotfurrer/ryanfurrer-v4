@@ -218,6 +218,15 @@ li {
   display: grid;
   grid-template-columns: 1fr;
   padding-bottom: 3rem;
+
+  #header-image-container {
+    margin-top: -25px;
+    display: flex;
+    justify-content: center;
+    #header-image {
+      width: 100%;
+    }
+  }
   #header-text {
     h2 {
       margin-top: 0;

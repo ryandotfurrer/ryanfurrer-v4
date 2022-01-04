@@ -176,6 +176,10 @@
     min-height: 60vh;
   }
 
+  #header-image {
+    max-width: 80%;
+  }
+
   #projects .wrapper {
     grid-row-gap: 0px;
     padding-left: 3rem;
