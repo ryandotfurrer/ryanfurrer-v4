@@ -16,6 +16,7 @@
   --bg-tertiary: var(--color-light-200);
   --text-primary: var(--color-dark-200);
   --text-secondary: var(--color-dark-100);
+  --text-accent: var(--color-accent-200);
 }
 
 .dark {
@@ -24,6 +25,7 @@
   --bg-tertiary: var(--color-dark-100);
   --text-primary: var(--color-light-100);
   --text-secondary: var(--color-light-200);
+  --text-accent: var(--color-accent-100);
 }
 
 section,
@@ -63,6 +65,10 @@ hr {
   color: var(--text-secondary);
 }
 
+.text-accent {
+  color: var(--text-accent);
+}
+
 a {
   color: inherit;
 }
@@ -83,6 +89,7 @@ h1,
 h2,
 h3 {
   line-height: 1.2;
+  font-weight: 400;
 }
 
 button,
@@ -378,11 +385,9 @@ li {
 
 #blog-container > p > a {
   font-weight: bolder;
-  transition: color 0.3s ease;
 }
 
 #blog-container > p > a:hover {
-  color: var(--text-primary);
   text-decoration: underline;
 }
 
@@ -447,6 +452,10 @@ li {
 #cta a:hover {
   background-color: var(--color-accent-200);
   border-color: var(--color-dark-200);
+}
+
+#cta strong {
+  color: var(--color-dark-200);
 }
 
 #footer .footer-container {

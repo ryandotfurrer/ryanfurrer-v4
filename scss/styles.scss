@@ -21,6 +21,7 @@
   --bg-tertiary: var(--color-light-200); //#a5bbca
   --text-primary: var(--color-dark-200); //#1C2830
   --text-secondary: var(--color-dark-100); //#556C77
+  --text-accent: var(--color-accent-200); // #f2ad18
 }
 
 // Assigns Dark Theme colors to appropriate colors
@@ -31,6 +32,7 @@
   --bg-tertiary: var(--color-dark-100); //#263640;
   --text-primary: var(--color-light-100); //#F5F5F5;
   --text-secondary: var(--color-light-200); //#C6D3DD;
+  --text-accent: var(--color-accent-100); // #f4bb44
 }
 
 section,
@@ -74,6 +76,10 @@ hr {
   color: var(--text-secondary);
 }
 
+.text-accent {
+  color: var(--text-accent);
+}
+
 a {
   color: inherit;
 }
@@ -94,6 +100,7 @@ h1,
 h2,
 h3 {
   line-height: 1.2;
+  font-weight: 400;
 }
 
 button,
@@ -408,9 +415,7 @@ li {
   padding-bottom: 6rem;
   > p > a {
     font-weight: bolder;
-    transition: color 0.3s ease;
     &:hover {
-      color: var(--text-primary);
       text-decoration: underline;
     }
   }
@@ -473,6 +478,10 @@ li {
       background-color: var(--color-accent-200);
       border-color: var(--color-dark-200);
     }
+  }
+
+  strong {
+    color: var(--color-dark-200);
   }
 }
 
