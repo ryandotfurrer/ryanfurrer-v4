@@ -17,9 +17,9 @@
 [x]Style newsletter form
 [x]Fix layout issue in blog section in Safari
   -Concerns breakpoints and align-items
-[]Style Projects section
+[x]Style Projects section
 []Adjust sizing as needed
-[]Adjust colors as needed
+[x]Adjust colors as needed
 []Create pages
   []Contact
     []Email form
@@ -28,40 +28,4 @@
   []Check that all work
   [x]Implement embeded Revue signup form in footer
 []Use JavaScript to append external-link arrow to any links with the target attribute of "_blank"
--Create social card and link up in head meta tags.
-
-:root {
-  --color-light-100: #F5F5F5;
-  --color-light-200: #C6D3DD;
-
-  --color-dark-100: #556C77;
-  --color-dark-200: #1C2830;
-
-  --color-accent-100: #F4BB44;
-  --color-accent-200: #F2AD18;
-
-  --color-light: #f5f5f5;
-  --color-light-100: #e6ebef;
-  --color-light-150: #d6dfe6;
-  --color-light-200: #c6d3dd;
-  --color-dark: #1c2830;
-  --color-dark-100: #818890;
-  --color-dark-150: #354650;
-  --color-dark-200: #556c77;
-  --cta-dark: #f4bb44;
-  --cta-light: #9d5600;
-}
-
-.light {
-  --bg-primary: var(--color-light-100); //#F5F5F5
-  --bg-secondary: var(--color-light-200); //#C6D3DD
-  --text-primary: var(--color-dark-200); //#1C2830
-  --text-secondary: var(--color-dark-100); //#556C77
-}
-
-.dark {
-  --bg-primary: var(--color-dark-200); //#1C2830;
-  --bg-secondary: var(--color-dark-100); //#556C77;
-  --text-primary: var(--color-light-100); //#F5F5F5;
-  --text-secondary: var(--color-light-200); //#C6D3DD;
-}
+[x]Create social card and link up in head meta tags.
