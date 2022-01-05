@@ -21,11 +21,14 @@
 []Adjust sizing as needed
 [x]Adjust colors as needed
 []Create pages
+  []About
   []Contact
     []Email form
     []Calendly page
-[]Link up anchor tags
-  []Check that all work
+  []Blog
+    []Look into CMS for this to make it better
+[x]Link up anchor tags
+  [x]Check that all work
   [x]Implement embeded Revue signup form in footer
 []Use JavaScript to append external-link arrow to any links with the target attribute of "_blank"
 [x]Create social card and link up in head meta tags.
