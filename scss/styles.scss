@@ -521,12 +521,17 @@ li {
       #social-links {
         align-items: baseline;
         display: flex;
-        gap: 1.25rem;
+        gap: 0 1.25rem;
         margin-bottom: 1.5rem;
 
         a {
-          font-size: 1.75rem;
+          font-size: 2.5rem;
           text-decoration: none;
+          transition: color 0.3s ease;
+
+          &:hover {
+            color: var(--text-primary);
+          }
         }
       }
     }
