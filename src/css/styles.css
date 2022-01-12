@@ -33,6 +33,28 @@ aside {
   border-radius: 0.5rem;
 }
 
+header > * + *,
+section > * + *,
+article > * + * {
+  margin-top: 1rem;
+}
+
+article img {
+  height: auto;
+}
+
+img {
+  border-radius: 0.5rem;
+}
+
+figcaption {
+  text-align: center;
+}
+
+figcaption a:hover {
+  text-underline-offset: 0;
+}
+
 .light-font {
   font-weight: 300;
 }
@@ -74,7 +96,17 @@ a {
 }
 
 p {
+  color: var(--text-secondary);
   max-width: 35rem;
+}
+
+p a {
+  color: var(--text-primary);
+  font-weight: bolder;
+}
+
+p a:hover {
+  text-decoration: underline;
 }
 
 .p-lg {
@@ -85,11 +117,25 @@ p {
   font-size: 1.25rem;
 }
 
+li {
+  margin-left: 2rem;
+}
+
+li::marker {
+  color: var(--text-secondary);
+}
+
+section {
+  display: flex;
+  justify-content: center;
+}
+
 h1,
 h2,
 h3 {
-  line-height: 1.2;
+  color: var(--text-primary);
   font-weight: 400;
+  line-height: 1.2;
 }
 
 button,
@@ -133,10 +179,6 @@ main section p a:hover {
   text-underline-offset: 0;
 }
 
-li {
-  list-style: none;
-}
-
 .nav-container {
   padding-top: 1.5rem;
 }
@@ -150,6 +192,10 @@ li {
 .nav-container .nav .navlist-container ul {
   display: flex;
   padding-left: 0;
+}
+
+.nav-container .nav .navlist-container ul li {
+  margin-left: 0;
 }
 
 .nav-container .nav .navlist-container ul li a {
@@ -211,19 +257,22 @@ li {
   margin-top: 0;
 }
 
+#header #header-text p {
+  margin-top: 1.5rem;
+}
+
 #header #header-text #header-links {
-  padding-top: 1.5rem;
+  margin-top: 3rem;
 }
 
 #header #header-text #header-links a {
   border: 2px solid transparent;
-  border-radius: 15rem;
+  border-radius: 5rem;
   display: block;
   padding: 1rem 1.5rem;
   text-align: center;
   text-decoration: none;
   transition: background-color 0.3s ease, border 0.3s ease;
-  width: 10rem;
 }
 
 #header #header-text #header-links a:first-of-type {
@@ -249,6 +298,7 @@ li {
 
 .read-more-container {
   display: flex;
+  margin-top: 1.5rem;
   width: 100%;
 }
 
@@ -290,6 +340,15 @@ li {
 #about #about-text-container h2 {
   margin: 0;
   padding-bottom: 1.5rem;
+}
+
+#projects h2 + p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#projects img {
+  margin-bottom: 2rem;
 }
 
 #projects .wrapper {
@@ -363,13 +422,12 @@ li {
 
 #projects .wrapper .tabs .project-panel .project-links a {
   border: 2px solid var(--text-secondary);
-  border-radius: 15rem;
+  border-radius: 5rem;
   color: var(--text-secondary);
   font-size: 0.9rem;
   padding: 0.5rem 1rem;
   text-align: center;
   transition: border-color 0.3s ease;
-  width: 4rem;
   transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
 }
 
@@ -391,18 +449,6 @@ li {
 
 #blog-container {
   padding-bottom: 6rem;
-}
-
-#blog-container > p > a {
-  font-weight: bolder;
-}
-
-#blog-container > p > a:hover {
-  text-decoration: underline;
-}
-
-#blog-container a:hover {
-  text-decoration: none;
 }
 
 #blog-container #blog-articles-container {
@@ -428,7 +474,12 @@ li {
   width: 100%;
 }
 
+#blog-container #blog-articles-container div a {
+  text-decoration: none;
+}
+
 #blog-container #blog-articles-container h3 {
+  margin-top: 1.5rem;
   margin-bottom: 0;
 }
 
@@ -451,12 +502,12 @@ li {
   border-radius: 15rem;
   color: var(--color-dark-200);
   display: block;
-  margin-top: 1rem;
-  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  margin-top: 2rem;
+  padding: 1rem 1rem;
   text-align: center;
   text-decoration: none;
   transition: background-color 0.3s ease, border 0.3s ease;
-  width: 10rem;
 }
 
 #cta a:hover {
@@ -539,6 +590,10 @@ li {
 #footer .footer-container .two-col-grid #sitemap ul {
   padding-left: 0;
   margin-top: 0;
+}
+
+#footer .footer-container .two-col-grid #sitemap ul li {
+  margin-left: 0;
 }
 
 #footer .footer-container .two-col-grid #sitemap ul li a {

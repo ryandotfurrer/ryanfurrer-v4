@@ -40,6 +40,33 @@ aside {
   border-radius: 0.5rem;
 }
 
+header,
+section,
+article {
+  > * + * {
+    margin-top: 1rem;
+  }
+}
+
+article {
+  img {
+    height: auto;
+  }
+}
+
+img {
+  border-radius: 0.5rem;
+}
+
+figcaption {
+  text-align: center;
+  a {
+    &:hover {
+      text-underline-offset: 0;
+    }
+  }
+}
+
 .light-font {
   font-weight: 300;
 }
@@ -85,7 +112,16 @@ a {
 }
 
 p {
+  color: var(--text-secondary);
   max-width: 35rem;
+
+  a {
+    color: var(--text-primary);
+    font-weight: bolder;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 .p-lg {
@@ -96,11 +132,25 @@ p {
   font-size: 1.25rem;
 }
 
+li {
+  margin-left: 2rem;
+
+  &::marker {
+    color: var(--text-secondary);
+  }
+}
+
+section {
+  display: flex;
+  justify-content: center;
+}
+
 h1,
 h2,
 h3 {
-  line-height: 1.2;
+  color: var(--text-primary);
   font-weight: 400;
+  line-height: 1.2;
 }
 
 button,
@@ -153,10 +203,6 @@ main {
   }
 }
 
-li {
-  list-style: none;
-}
-
 .nav-container {
   padding-top: 1.5rem;
   .nav {
@@ -170,6 +216,7 @@ li {
         padding-left: 0;
 
         li {
+          margin-left: 0;
           a {
             display: block;
             height: 100%;
@@ -231,17 +278,20 @@ li {
     h2 {
       margin-top: 0;
     }
+
+    p {
+      margin-top: 1.5rem;
+    }
     #header-links {
-      padding-top: 1.5rem;
+      margin-top: 3rem;
       a {
         border: 2px solid transparent;
-        border-radius: 15rem;
+        border-radius: 5rem;
         display: block;
         padding: 1rem 1.5rem;
         text-align: center;
         text-decoration: none;
         transition: background-color 0.3s ease, border 0.3s ease;
-        width: 10rem;
       }
 
       a:first-of-type {
@@ -270,6 +320,7 @@ li {
 
 .read-more-container {
   display: flex;
+  margin-top: 1.5rem;
   width: 100%;
 
   a {
@@ -320,6 +371,15 @@ li {
 }
 
 #projects {
+  h2 + p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  img {
+    margin-bottom: 2rem;
+  }
+
   .wrapper {
     padding-left: 4vw;
     padding-right: 4vw;
@@ -388,13 +448,12 @@ li {
 
           a {
             border: 2px solid var(--text-secondary);
-            border-radius: 15rem;
+            border-radius: 5rem;
             color: var(--text-secondary);
             font-size: 0.9rem;
             padding: 0.5rem 1rem;
             text-align: center;
             transition: border-color 0.3s ease;
-            width: 4rem;
             transition: background-color 0.3s ease, border-color 0.3s ease,
               color 0.3s ease;
 
@@ -422,17 +481,6 @@ li {
 
 #blog-container {
   padding-bottom: 6rem;
-  > p > a {
-    font-weight: bolder;
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-  a {
-    &:hover {
-      text-decoration: none;
-    }
-  }
   #blog-articles-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -451,9 +499,13 @@ li {
         transition: border-radius 0.3s ease;
         width: 100%;
       }
+      a {
+        text-decoration: none;
+      }
     }
 
     h3 {
+      margin-top: 1.5rem;
       margin-bottom: 0;
     }
     p {
@@ -476,12 +528,13 @@ li {
     border-radius: 15rem;
     color: var(--color-dark-200);
     display: block;
-    margin-top: 1rem;
-    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    margin-top: 2rem;
+    padding: 1rem 1rem;
     text-align: center;
     text-decoration: none;
     transition: background-color 0.3s ease, border 0.3s ease;
-    width: 10rem;
+    // max-width: 50%;
 
     &:hover {
       background-color: var(--color-accent-200);
@@ -571,6 +624,7 @@ li {
           margin-top: 0;
 
           li {
+            margin-left: 0;
             a {
               display: block;
             }

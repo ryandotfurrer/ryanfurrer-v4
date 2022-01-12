@@ -28,15 +28,10 @@
     <!--TWITTER SEO-->
     <!--SOCIAL SHARING CARD-->
     <meta
-    name="twitter:card"
-    content="https://res.cloudinary.com/ryan-furrer/image/upload/v1641317729/Portfolio%20Site/theryanfurrer-share-card_mluakx.png"
-    description="summary_large_image"
-  />
+    name="twitter:card" content="summary_large_image"/>
   <meta
   name="twitter:image"
-  content="https://res.cloudinary.com/ryan-furrer/image/upload/v1641317729/Portfolio%20Site/theryanfurrer-share-card_mluakx.png"
-  description="summary_large_image"
-/>
+  content="https://res.cloudinary.com/ryan-furrer/image/upload/v1641317729/Portfolio%20Site/theryanfurrer-share-card_mluakx.png"/>
     <meta name="twitter:creator" content="@TheRyanFurrer" />
     <meta name="twitter:site" content="@TheRyanFurrer" />
     <meta name="twitter:title" content="Ryan Furrer" />
@@ -65,6 +60,7 @@
       rel="stylesheet"
     />
     <script src="https://unpkg.com/phosphor-icons"></script>
+    <link rel="stylesheet" href="/src/css/css-reset.css">
     <link rel="stylesheet" href="/src/css/utility-classes.css" />
     <link rel="stylesheet" href="/src/css/styles.css" />
     <link rel="stylesheet" href="/src/css/media-queries.css" />
@@ -77,7 +73,7 @@
           <h1><a href="https://theryanfurrer-2022.onrender.com/" rel="noopener noreferrer" class="text-primary">Ryan Furrer</a></h1>
         </div>
         <div class="navlist-container">
-          <ul class="nav-list">
+          <ul role="list" class="nav-list">
             <li class="nav-item">
               <a href="https://theryanfurrer-2022.onrender.com/#projects"  rel="noopener noreferrer" class="nav-link text-secondary padding-x-2"
                 >Projects</a
@@ -100,10 +96,10 @@
         <div id="nav-btn-container">
           <button
             id="theme-change"
-            legend="Theme Switcher"
             class="padding-x-1 padding-y-1 ph-sun"
+            role="switch"
           ></button>
-          <button id="hamburger" legend="Mobile Menu">
+          <button id="hamburger">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
@@ -329,7 +325,7 @@
 
           <div id="sitemap">
             <p class="text-primary">Sitemap</p>
-            <ul>
+            <ul role="list">
               <li><a href="https://theryanfurrer-2022.onrender.com/" rel="noopener noreferrer" class="text-secondary">Home</a></li>
               <li><a href="https://codingcatchup.com/" target="_blank" rel="noopener noreferrer" class="text-secondary">Blog</a></li>
               <li><a href="https://theryanfurrer-2022.onrender.com/#projects" rel="noopener noreferrer" class="text-secondary">Projects</a></li>

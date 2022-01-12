@@ -65,6 +65,7 @@
       rel="stylesheet"
     />
     <script src="https://unpkg.com/phosphor-icons"></script>
+    <link rel="stylesheet" href="/src/css/css-reset.css">
     <link rel="stylesheet" href="/src/css/utility-classes.css" />
     <link rel="stylesheet" href="/src/css/styles.css" />
     <link rel="stylesheet" href="/src/css/media-queries.css" />
@@ -77,7 +78,7 @@
           <h1><a href="https://theryanfurrer-2022.onrender.com/" rel="noopener noreferrer" class="text-primary">Ryan Furrer</a></h1>
         </div>
         <div class="navlist-container">
-          <ul class="nav-list">
+          <ul role="list" class="nav-list">
             <li class="nav-item">
               <a href="https://theryanfurrer-2022.onrender.com/#projects"  rel="noopener noreferrer" class="nav-link text-secondary padding-x-2"
                 >Projects</a
@@ -102,6 +103,7 @@
             id="theme-change"
             legend="Theme Switcher"
             class="padding-x-1 padding-y-1 ph-sun"
+            role="switch"
           ></button>
           <button id="hamburger" legend="Mobile Menu">
             <span class="bar"></span>
@@ -114,12 +116,76 @@
 
     <div class="header-container margin-x-wrapper padding-y-section-outside-lg">
       <header id="header">
-        <h2>Coming Soon</h2>
+        <div id="header-image-container">
+          <figure>
+            <img
+            src="/images/violin.png"
+            alt="Picture of a violin"
+          />
+            <figcaption class="text-secondary"><small>Photo by <a href="https://unsplash.com/@poppyviolin" target="_blank" rel="noopener noreferrer">Roberto Delfanti</a> on <a href="https://unsplash.com" target="_blank" rel="noopener noreferrer">Unsplash</a>.
+            </small></figcaption>
+          </figure>
+        </div>
+        <div id="header-text" class="padding-y-med">
+          <h2 class="text-primary">
+            Hi, I'm Ryan Furrer and I'm an aspiring Front-End Web Developer.
+          </h2>
+          <p class="p-xl">Web Development brings me such joy, purpose, and fulfillment I want to make it my career. My goal to build projects that can help people achieve their goals and give them the web prescence they've been dreaming of.</p>
+        </div>
       </header>
     </div>
 
     <main class="main">
+      <section class="margin-x-wrapper padding-y-section-outside-xl">
+        <article>
+          <h2>My Journey</h2>
+          <figure>
+            <img
+            src="/images/nafme-cropped.jpg"
+            alt="Ryan Furrer and friends at a Music Education conference."
+          />
+            <figcaption class="text-secondary"><small>Ryan Furrer and friends at a Music Education conference.
+            </small></figcaption>
+          </figure>
+          <p>After graduating high school in 2009, I went to college for Music Education and Performance at the Crane School of Music at SUNY Potsdam in Potsdam, NY. After failing out of the program after 1.5 years for academic reasons, I then transferred to Suffolk County Community College back at home on Long Island, NY. After another 2 years there, I transferred to the Aaron Copland School of Music at CUNY Queens in Flushing, NY where I continued to study Music Education. </p>
+          <p>I then left CUNY Queens to work full-time as clearly school was not for me. I continued to teach privately, work full-time, and perform at weddings, in orchestras, or in musicals.</p>
+          <p>Music was my first love and passion in life, I pursued it as much as I could but without a college degree there was no way I could teach in a public school and I was not commited enough to the performance life to make that my sole source of income. This was the first time I thought about moving my career to something having to do with technology - be it IT or some sort of software engineering job.</p>
+          <h3>Indecisiveness Strikes</h3>
+          <p>After deciding to commit to pursuing a new career, I started with Front-End Web Development as I had always been interested in creating websites and had little to no idea how it was done. I barely started studying HTML and CSS when I decided then to pursue becoming an IT worker, as I had always been good at fixing computers and issues plaguing users - I was (and still am) the family IT guy. <small><a href="https://xkcd.com/627" target="_blank" rel="noopener noreferrer">Relevant xkcd comic</a></small>.</p>
 
+          <p>As I studied to take the CompTIA A+ exam which would allow me to be viable for jobs, I began looking at the beginning salaries and career climb for what I was interested in and decided to quit persuing IT work. I could not take that steep of a pay cut and I also felt like I was too old to start the climb - this was foolish, of course, but I did not know that when I was younger.</p>
+
+          <p>Next I decide to begin studying AWS based on a recommendation from a friend. I began learning SQL and Python, as well as studying online at <a href="https://acloudguru.com/training-library/aws-cloud-training" target="_blank" rel="noopener noreferrer">A Cloud Guru</a>. I was very excited to know someone in the field and the amount of money I could make as an AWS Solutions Architect was quite impressive. Howver, it just did not click with me and so we come full-circle back to Front-End Web Development.</p>
+
+          <h3>Back to Front-End</h3>
+          <img src="/images/macbook.png" alt="MacBook Pro">
+          <p>Now that I decided once and for all to commit to Front-End Web Development, I knew I had a lot of work to do. I think what attracts me most about Front-End work is two things:</p>
+
+          <ul>
+            <li><p>Being able to see your work instantly.</p></li>
+            <li><p>The design aspect of it still lets me flex my creative muscles.</p></li>
+          </ul>
+
+          <p>So I got busy studyng and building after work. It has been a number of years as I've gone through phases of intense focus to phases of not coding at all. My most recent stint of almost no coding was between August 2021 and the end of December 2021. Part of this was a lot of real life reasons such as:</p>
+
+          <ul>
+            <li>
+              <p>My bachelor party in August.</p>
+            </li>
+            <li>
+              <p>Preparing for my wedding through August and September.</p>
+            </li>
+            <li>
+              <p>My Wedding and Honeymoon in October.</p>
+            </li>
+            <li>
+              <p>Other excuses...</p>
+            </li>
+          </ul>
+
+          <p>That said, I absolutely <em>love</em> Front-End work. It captivates me so much and seeing what I write be put into the world brings me intense joy and fulfillment. I also blog and have a newsletter as I try to give back to the community that has given me so much. I truly feel I am a community-taught Web Developer. As much as it can be toxic, there is a lot of good in it as well.</p>
+        </article>
+      </section>
     </main>
 
     <footer id="footer">
@@ -168,7 +234,7 @@
 
           <div id="sitemap">
             <p class="text-primary">Sitemap</p>
-            <ul>
+            <ul role="list">
               <li><a href="https://theryanfurrer-2022.onrender.com/" rel="noopener noreferrer" class="text-secondary">Home</a></li>
               <li><a href="https://codingcatchup.com/" target="_blank" rel="noopener noreferrer" class="text-secondary">Blog</a></li>
               <li><a href="https://theryanfurrer-2022.onrender.com/#projects" rel="noopener noreferrer" class="text-secondary">Projects</a></li>
