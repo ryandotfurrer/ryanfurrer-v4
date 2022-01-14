@@ -381,6 +381,33 @@ i {
   background-color: var(--bg-secondary);
   .wrapper {
     .tabs {
+      .projects-header {
+        .tech-list-container {
+          margin-bottom: 3rem;
+          .tech-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 1rem;
+
+            li {
+              background-color: var(--bg-tertiary);
+              border-radius: 5rem;
+              font-size: 0.75rem;
+              padding: 0.75em 1.5em;
+              margin-left: 0;
+              text-align: center;
+
+              &:last-of-type {
+                margin-bottom: 0;
+              }
+
+              p {
+                color: var(--bg-primary);
+              }
+            }
+          }
+        }
+      }
       .tablist {
         border-bottom: 1px solid var(--text-secondary);
         display: flex;
@@ -421,12 +448,10 @@ i {
       }
 
       .project-panel {
-        .project-image {
-          width: 50%;
-        }
         .project-links {
           display: flex;
-          gap: 0 0.75rem;
+          flex-direction: column;
+          gap: 0.75rem 0;
 
           a {
             border: 2px solid var(--text-secondary);
@@ -465,13 +490,9 @@ i {
     gap: 1.5rem 0;
 
     div {
+      background-color: var(--bg-secondary);
       border-radius: 0.5rem;
       padding: 1rem;
-      transition: background-color 0.3s ease;
-
-      &:hover {
-        background-color: var(--bg-secondary);
-      }
       .blog-image {
         max-width: 100%;
       }

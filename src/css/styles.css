@@ -363,6 +363,33 @@ i {
   background-color: var(--bg-secondary);
 }
 
+#projects .wrapper .tabs .projects-header .tech-list-container {
+  margin-bottom: 3rem;
+}
+
+#projects .wrapper .tabs .projects-header .tech-list-container .tech-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+#projects .wrapper .tabs .projects-header .tech-list-container .tech-list li {
+  background-color: var(--bg-tertiary);
+  border-radius: 5rem;
+  font-size: 0.75rem;
+  padding: 0.75em 1.5em;
+  margin-left: 0;
+  text-align: center;
+}
+
+#projects .wrapper .tabs .projects-header .tech-list-container .tech-list li:last-of-type {
+  margin-bottom: 0;
+}
+
+#projects .wrapper .tabs .projects-header .tech-list-container .tech-list li p {
+  color: var(--bg-primary);
+}
+
 #projects .wrapper .tabs .tablist {
   border-bottom: 1px solid var(--text-secondary);
   display: flex;
@@ -401,13 +428,10 @@ i {
   color: var(--text-primary);
 }
 
-#projects .wrapper .tabs .project-panel .project-image {
-  width: 50%;
-}
-
 #projects .wrapper .tabs .project-panel .project-links {
   display: flex;
-  gap: 0 0.75rem;
+  flex-direction: column;
+  gap: 0.75rem 0;
 }
 
 #projects .wrapper .tabs .project-panel .project-links a {
@@ -441,13 +465,9 @@ i {
 }
 
 #blog-container #blog-articles-container div {
+  background-color: var(--bg-secondary);
   border-radius: 0.5rem;
   padding: 1rem;
-  transition: background-color 0.3s ease;
-}
-
-#blog-container #blog-articles-container div:hover {
-  background-color: var(--bg-secondary);
 }
 
 #blog-container #blog-articles-container div .blog-image {

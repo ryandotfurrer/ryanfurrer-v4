@@ -123,14 +123,13 @@
     gap: 0 4vw;
   }
 
-  #profile-img-container {
-    width: 40%;
-  }
-
   #about-text-container {
     display: flex;
     flex-direction: column;
-    width: 60%;
+  }
+
+  #projects .wrapper .tabs p {
+    max-width: 100%;
   }
 
   #projects > #projects-container > #projects-tab-container button {
@@ -138,19 +137,40 @@
     display: flex;
     font-size: 1.25rem;
   }
+
   #projects > #projects-container > #projects-tab-container button > i {
     display: inline-block;
     font-size: 2rem;
   }
 
+  .project-image {
+    margin: 0 auto;
+    margin-top: 3rem;
+    max-width: 75%;
+  }
+
+  #projects .wrapper .tabs .project-panel .project-links {
+    gap: 0 0.75rem;
+    flex-direction: row;
+  }
+
   #blog #blog-articles-container {
     grid-template-columns: 1fr 1fr;
-    /* gap: 1.5rem 1.5rem; */
+    gap: 0 1.5rem;
+  }
+
+  #blog #blog-articles-container div {
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+  }
+
+  #blog #blog-articles-container div:hover {
+    background-color: var(--bg-secondary);
   }
 
   #cta {
     margin: 0 auto;
-    /* padding: 4vw; */
+    padding: 4vw;
     max-width: 65%;
   }
 
@@ -159,6 +179,7 @@
   }
 }
 
+/*-----1080px or wider styling-----*/
 @media only screen and (min-width: 1080px) {
   h1 {
     font-size: 3.052rem;
@@ -184,11 +205,9 @@
     max-width: 90%;
   }
 
-  /* #projects .wrapper {
-    grid-row-gap: 0px;
-    padding-left: 3rem;
-    padding-right: 3rem;
-  } */
+  #projects .wrapper {
+    padding: 4vw;
+  }
 
   #projects .wrapper .tabs {
     display: grid;
@@ -201,14 +220,11 @@
     grid-area: 1 / 1 / 2 / 2;
   }
   #projects .wrapper .tabs .tablist {
-    justify-content: space-between;
     border: none;
-    display: flex;
-    flex-direction: column;
-    font-style: 1rem;
+    display: grid;
+    justify-content: start;
     grid-area: 2 / 1 / 3 / 2;
     margin-bottom: 0;
-    height: 65%;
   }
 
   #projects .wrapper .tabs .tablist button {
@@ -217,54 +233,41 @@
     font-size: 2rem;
     margin: 0;
     padding: 0;
-    justify-content: space-between;
-    width: 11rem;
-    transition: all 0.3s ease;
+    transition: color 0.3s ease;
   }
 
   #projects .wrapper .tabs .tablist button i {
     font-size: 3rem;
+    transition: opacity 0.5s ease, transform 0.5s ease;
   }
 
   #projects .wrapper .tabs .tablist button[aria-selected='true'] {
-    border: none;
-    width: 12rem;
     opacity: 1;
   }
 
   #projects .wrapper .tabs .tablist button[aria-selected='true'] i {
     color: var(--text-primary);
     opacity: 1;
+    transform: translateX(2rem);
   }
   #projects .wrapper .tabs .project-panel {
     place-items: center;
     grid-area: 1 / 2 / 3 / 3;
-    /* padding-top: 1.5rem;
-    padding-bottom: 1rem; */
     min-height: 50vh;
   }
-  #projects .wrapper .tabs .project-panel .project-image {
-    border-radius: 0.5rem;
-    width: 50%;
+  .project-image {
+    margin-top: 0;
+    max-width: 100%;
   }
-  /* #projects .wrapper .tabs .project-panel .project-name {
+
+  #projects .wrapper .tabs .project-panel .project-name {
     line-height: 1;
     margin-bottom: 2rem;
-  } */
-  /* #projects .wrapper .tabs .project-panel p {
-    margin-bottom: 1rem;
-  } */
-  #projects .wrapper .tabs .project-panel .project-links {
-    display: flex;
-    /* gap: 0.5rem; */
   }
+
   #projects .wrapper .tabs .project-panel .project-links a {
-    /* border-radius: 15rem; */
-    /* font-size: 0.9rem;
-    padding: 0.5rem 1rem; */
     text-align: center;
     transition: border-color 0.3s ease;
-    /* width: 4rem; */
     transition: background-color 0.3s ease, border-color 0.3s ease,
       color 0.3s ease;
   }
