@@ -4,12 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Ryan Furrer</title>
+    <title>Ryan Furrer</title>
     <!--SEO-->
-    <meta
-      name="description"
-      content="Learn HTML, Learn CSS, Learn JavaScript, Learn React, Dev Journal, Blog, Technical Blogs, Front End, Front-End, Web Developer""
-    />
+    <meta name="description" content="Learn HTML, Learn CSS, Learn JavaScript,
+    Learn React, Dev Journal, Blog, Technical Blogs, Front End, Front-End, Web
+    Developer"" />
     <meta
       name="keywords"
       content="Learn HTML, Learn CSS, Learn JavaScript, Learn React, Dev Journal, Blog, Technical Blogs, Front End, Front-End, Web Developer"
@@ -27,16 +26,11 @@
     />
     <!--TWITTER SEO-->
     <!--SOCIAL SHARING CARD-->
+    <meta name="twitter:card" content="summary_large_image" />
     <meta
-    name="twitter:card"
-    content="https://res.cloudinary.com/ryan-furrer/image/upload/v1641317729/Portfolio%20Site/theryanfurrer-share-card_mluakx.png"
-    description="summary_large_image"
-  />
-  <meta
-  name="twitter:image"
-  content="https://res.cloudinary.com/ryan-furrer/image/upload/v1641317729/Portfolio%20Site/theryanfurrer-share-card_mluakx.png"
-  description="summary_large_image"
-/>
+      name="twitter:image"
+      content="https://res.cloudinary.com/ryan-furrer/image/upload/v1641317729/Portfolio%20Site/theryanfurrer-share-card_mluakx.png"
+    />
     <meta name="twitter:creator" content="@TheRyanFurrer" />
     <meta name="twitter:site" content="@TheRyanFurrer" />
     <meta name="twitter:title" content="Ryan Furrer" />
@@ -65,45 +59,64 @@
       rel="stylesheet"
     />
     <script src="https://unpkg.com/phosphor-icons"></script>
+    <link rel="stylesheet" href="/src/css/css-reset.css" />
     <link rel="stylesheet" href="/src/css/utility-classes.css" />
     <link rel="stylesheet" href="/src/css/styles.css" />
     <link rel="stylesheet" href="/src/css/media-queries.css" />
   </head>
 
-  <body class="m-auto bg-primary padding-x-2">
+  <body class="m-auto">
     <div class="nav-container">
       <nav class="nav">
         <div>
-          <h1><a href="https://theryanfurrer-2022.onrender.com/" rel="noopener noreferrer" class="text-primary">Ryan Furrer</a></h1>
+          <h1>
+            <a href="/index.html" rel="noopener noreferrer">Ryan Furrer</a>
+          </h1>
         </div>
         <div class="navlist-container">
-          <ul class="nav-list">
+          <ul role="list" id="mobile-navlist" class="nav-list">
             <li class="nav-item">
-              <a href="https://theryanfurrer-2022.onrender.com/#projects"  rel="noopener noreferrer" class="nav-link text-secondary padding-x-2"
+              <a
+                href="https://theryanfurrer-2022.onrender.com/#projects"
+                rel="noopener noreferrer"
+                class="nav-link"
                 >Projects</a
               >
             </li>
             <li class="nav-item">
-              <a href="https://codingcatchup.com/" target="_blank" rel="noopener noreferrer" class="nav-link text-secondary padding-x-2">Blog</a>
+              <a
+                href="https://codingcatchup.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="nav-link"
+                >Blog</a
+              >
             </li>
             <li class="nav-item">
-              <a href="https://theryanfurrer-2022.onrender.com/about" rel="noopener noreferrer" class="nav-link text-secondary padding-x-2">About</a>
+              <a
+                href="https://theryanfurrer-2022.onrender.com/about"
+                rel="noopener noreferrer"
+                class="nav-link"
+                >About</a
+              >
             </li>
             <li class="nav-item">
-              <a href="https://theryanfurrer-2022.onrender.com/contact" rel="noopener noreferrer" class="nav-link text-secondary padding-x-2"
+              <a
+                href="https://theryanfurrer-2022.onrender.com/contact"
+                rel="noopener noreferrer"
+                class="nav-link"
                 >Contact</a
               >
             </li>
-            <!--Link to page asking if they'd like to email or setup Calendly call, then link to each respective page-->
           </ul>
         </div>
         <div id="nav-btn-container">
           <button
             id="theme-change"
-            legend="Theme Switcher"
             class="padding-x-1 padding-y-1 ph-sun"
+            role="switch"
           ></button>
-          <button id="hamburger" legend="Mobile Menu">
+          <button id="hamburger">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
@@ -112,45 +125,44 @@
       </nav>
     </div>
 
-    <div class="header-container margin-x-wrapper padding-y-section-outside-lg">
+    <div class="header-container">
       <header id="header">
         <h2>Coming Soon</h2>
       </header>
     </div>
 
-    <main class="main">
-
-    </main>
+    <main class="main"></main>
 
     <footer id="footer">
       <div class="footer-container">
         <div id="footer-name">
-          <p class="text-primary text-lg">Ryan Furrer</p>
-          <p class="text-secondary text-lg">
-            A community-taught Front-End Web Developer
+          <p class="text-lg"><strong>Ryan Furrer</strong></p>
+          <p class="text-lg">
+            A community-taught <br />
+            Front-End Web Developer
           </p>
           <div id="social-links">
             <a
               href="#"
-              class="text-secondary ph-github-logo""
+              class="ph-github-logo"
               target="_blank"
               rel="noopener noreferrer"
             ></a>
             <a
               href="#"
-              class="text-secondary ph-linkedin-logo"
+              class="ph-linkedin-logo"
               target="_blank"
               rel="noopener noreferrer"
             ></a>
             <a
               href="#"
-              class="text-secondary ph-twitter-logo"
+              class="ph-twitter-logo"
               target="_blank"
               rel="noopener noreferrer"
             ></a>
             <a
               href="#"
-              class="text-secondary ph-instagram-logo"
+              class="ph-instagram-logo"
               target="_blank"
               rel="noopener noreferrer"
             ></a>
@@ -159,29 +171,62 @@
 
         <div class="two-col-grid">
           <div id="contact">
-            <p class="text-primary">Contact</p>
-            <a href="/contact/email" rel="noopener noreferrer" class="text-secondary">Email Ryan</a>
+            <p><strong>Contact</strong></p>
+            <a href="/contact/email" rel="noopener noreferrer">Email Ryan</a>
             <!--Link to page with contact form-->
-            <a href="/contact/video-call" rel="noopener noreferrer" class="text-secondary">Call Ryan</a>
+            <a href="/contact/video-call" rel="noopener noreferrer"
+              >Call Ryan</a
+            >
             <!--Link to page explaining to schedule on Calendly-->
           </div>
 
           <div id="sitemap">
-            <p class="text-primary">Sitemap</p>
-            <ul>
-              <li><a href="https://theryanfurrer-2022.onrender.com/" rel="noopener noreferrer" class="text-secondary">Home</a></li>
-              <li><a href="https://codingcatchup.com/" target="_blank" rel="noopener noreferrer" class="text-secondary">Blog</a></li>
-              <li><a href="https://theryanfurrer-2022.onrender.com/#projects" rel="noopener noreferrer" class="text-secondary">Projects</a></li>
-              <li><a href="https://theryanfurrer-2022.onrender.com/about" rel="noopener noreferrer" class="text-secondary">About</a></li>
-              <li><a href="https://theryanfurrer-2022.onrender.com/contact"  rel="noopener noreferrer"class="text-secondary">Contact</a></li>
+            <p><strong>Sitemap</strong></p>
+            <ul role="list">
+              <li>
+                <a
+                  href="https://theryanfurrer-2022.onrender.com/"
+                  rel="noopener noreferrer"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://codingcatchup.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://theryanfurrer-2022.onrender.com/#projects"
+                  rel="noopener noreferrer"
+                  >Projects</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://theryanfurrer-2022.onrender.com/about"
+                  rel="noopener noreferrer"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://theryanfurrer-2022.onrender.com/contact"
+                  rel="noopener noreferrer"
+                  >Contact</a
+                >
+              </li>
               <!--Link to page asking if they'd like to email or setup Calendly call, then link to each respective page-->
             </ul>
           </div>
         </div>
 
         <div id="newsletter">
-          <p class="text-primary">Newsletter</p>
-          <p class="text-secondary">
+          <p><strong>Newsletter</strong></p>
+          <p>
             Subscribe to stay in the know for when I publish new articles, find
             interesting things on the web, and more!
           </p>
@@ -194,11 +239,9 @@
               target="_blank"
             >
               <div class="revue-form-group">
-                <label for="member_first_name" class="text-secondary"
-                  >First name</label
-                >
+                <label for="member_first_name">First name</label>
                 <input
-                  class="revue-form-field block bg-secondary"
+                  class="revue-form-field block"
                   type="text"
                   name="member[first_name]"
                   id="member_first_name"
@@ -206,9 +249,9 @@
                 />
               </div>
               <div class="revue-form-group">
-                <label for="member_email" class="text-secondary">Email</label>
+                <label for="member_email">Email</label>
                 <input
-                  class="revue-form-field block bg-secondary"
+                  class="revue-form-field block"
                   type="email"
                   name="member[email]"
                   id="member_email"
@@ -217,14 +260,13 @@
               <div class="revue-form-actions">
                 <input
                   type="submit"
-                  class="block"
                   value="Subscribe"
                   name="member[subscribe]"
                   id="member_submit"
                 />
               </div>
               <div class="revue-form-footer">
-                <p class="text-secondary light-font">
+                <p class="light-font">
                   <small
                     >By subscribing, you agree with Revue's
                     <a target="_blank" href="https://www.getrevue.co/terms"
@@ -247,12 +289,10 @@
         </div>
       </div>
       <div id="legal">
-        <p class="text-secondary light-font">
+        <p class="light-font">
           <small
             >All rights reservered &copy;
-            <a
-              href="https://theryanfurrer.dev/"
-              rel="noopener noreferrer"
+            <a href="https://theryanfurrer.dev/" rel="noopener noreferrer"
               >Ryan Furrer</a
             >
             <span id="footer-year">2022</span></small

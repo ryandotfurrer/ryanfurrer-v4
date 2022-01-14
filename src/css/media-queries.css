@@ -132,6 +132,10 @@
     max-width: 100%;
   }
 
+  #projects .wrapper .tabs .projects-header .tech-list-container .tech-list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
   #projects > #projects-container > #projects-tab-container button {
     align-items: center;
     display: flex;

@@ -4,12 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Ryan Furrer</title>
+    <title>Ryan Furrer</title>
     <!--SEO-->
-    <meta
-      name="description"
-      content="Learn HTML, Learn CSS, Learn JavaScript, Learn React, Dev Journal, Blog, Technical Blogs, Front End, Front-End, Web Developer""
-    />
+    <meta name="description" content="Learn HTML, Learn CSS, Learn JavaScript,
+    Learn React, Dev Journal, Blog, Technical Blogs, Front End, Front-End, Web
+    Developer"" />
     <meta
       name="keywords"
       content="Learn HTML, Learn CSS, Learn JavaScript, Learn React, Dev Journal, Blog, Technical Blogs, Front End, Front-End, Web Developer"
@@ -27,16 +26,11 @@
     />
     <!--TWITTER SEO-->
     <!--SOCIAL SHARING CARD-->
+    <meta name="twitter:card" content="summary_large_image" />
     <meta
-    name="twitter:card"
-    content="https://res.cloudinary.com/ryan-furrer/image/upload/v1641317729/Portfolio%20Site/theryanfurrer-share-card_mluakx.png"
-    description="summary_large_image"
-  />
-  <meta
-  name="twitter:image"
-  content="https://res.cloudinary.com/ryan-furrer/image/upload/v1641317729/Portfolio%20Site/theryanfurrer-share-card_mluakx.png"
-  description="summary_large_image"
-/>
+      name="twitter:image"
+      content="https://res.cloudinary.com/ryan-furrer/image/upload/v1641317729/Portfolio%20Site/theryanfurrer-share-card_mluakx.png"
+    />
     <meta name="twitter:creator" content="@TheRyanFurrer" />
     <meta name="twitter:site" content="@TheRyanFurrer" />
     <meta name="twitter:title" content="Ryan Furrer" />
@@ -65,47 +59,64 @@
       rel="stylesheet"
     />
     <script src="https://unpkg.com/phosphor-icons"></script>
-    <link rel="stylesheet" href="/src/css/css-reset.css">
+    <link rel="stylesheet" href="/src/css/css-reset.css" />
     <link rel="stylesheet" href="/src/css/utility-classes.css" />
     <link rel="stylesheet" href="/src/css/styles.css" />
     <link rel="stylesheet" href="/src/css/media-queries.css" />
   </head>
 
-  <body class="m-auto bg-primary padding-x-2">
+  <body class="m-auto">
     <div class="nav-container">
       <nav class="nav">
         <div>
-          <h1><a href="https://theryanfurrer-2022.onrender.com/" rel="noopener noreferrer" class="text-primary">Ryan Furrer</a></h1>
+          <h1>
+            <a href="/index.html" rel="noopener noreferrer">Ryan Furrer</a>
+          </h1>
         </div>
         <div class="navlist-container">
-          <ul role="list" class="nav-list">
+          <ul role="list" id="mobile-navlist" class="nav-list">
             <li class="nav-item">
-              <a href="https://theryanfurrer-2022.onrender.com/#projects"  rel="noopener noreferrer" class="nav-link text-secondary padding-x-2"
+              <a
+                href="https://theryanfurrer-2022.onrender.com/#projects"
+                rel="noopener noreferrer"
+                class="nav-link"
                 >Projects</a
               >
             </li>
             <li class="nav-item">
-              <a href="https://codingcatchup.com/" target="_blank" rel="noopener noreferrer" class="nav-link text-secondary padding-x-2">Blog</a>
+              <a
+                href="https://codingcatchup.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="nav-link"
+                >Blog</a
+              >
             </li>
             <li class="nav-item">
-              <a href="https://theryanfurrer-2022.onrender.com/about" rel="noopener noreferrer" class="nav-link text-secondary padding-x-2">About</a>
+              <a
+                href="https://theryanfurrer-2022.onrender.com/about"
+                rel="noopener noreferrer"
+                class="nav-link"
+                >About</a
+              >
             </li>
             <li class="nav-item">
-              <a href="https://theryanfurrer-2022.onrender.com/contact" rel="noopener noreferrer" class="nav-link text-secondary padding-x-2"
+              <a
+                href="https://theryanfurrer-2022.onrender.com/contact"
+                rel="noopener noreferrer"
+                class="nav-link"
                 >Contact</a
               >
             </li>
-            <!--Link to page asking if they'd like to email or setup Calendly call, then link to each respective page-->
           </ul>
         </div>
         <div id="nav-btn-container">
           <button
             id="theme-change"
-            legend="Theme Switcher"
             class="padding-x-1 padding-y-1 ph-sun"
             role="switch"
           ></button>
-          <button id="hamburger" legend="Mobile Menu">
+          <button id="hamburger">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
@@ -114,59 +125,147 @@
       </nav>
     </div>
 
-    <div class="header-container margin-x-wrapper padding-y-section-outside-lg">
+    <div class="header-container">
       <header id="header">
         <div id="header-image-container">
           <figure>
-            <img
-            src="/images/violin.png"
-            alt="Picture of a violin"
-          />
-            <figcaption class="text-secondary"><small>Photo by <a href="https://unsplash.com/@poppyviolin" target="_blank" rel="noopener noreferrer">Roberto Delfanti</a> on <a href="https://unsplash.com" target="_blank" rel="noopener noreferrer">Unsplash</a>.
-            </small></figcaption>
+            <img src="/images/violin.png" alt="Picture of a violin" />
+            <figcaption>
+              <small
+                >Photo by
+                <a
+                  href="https://unsplash.com/@poppyviolin"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Roberto Delfanti</a
+                >
+                on
+                <a
+                  href="https://unsplash.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Unsplash</a
+                >.
+              </small>
+            </figcaption>
           </figure>
         </div>
-        <div id="header-text" class="padding-y-med">
-          <h2 class="text-primary">
+        <div id="header-text">
+          <h2>
             Hi, I'm Ryan Furrer and I'm an aspiring Front-End Web Developer.
           </h2>
-          <p class="p-xl">Web Development brings me such joy, purpose, and fulfillment I want to make it my career. My goal to build projects that can help people achieve their goals and give them the web prescence they've been dreaming of.</p>
+          <p class="p-xl">
+            Web Development brings me such joy, purpose, and fulfillment I want
+            to make it my career. My goal to build projects that can help people
+            achieve their goals and give them the web prescence they've been
+            dreaming of.
+          </p>
         </div>
       </header>
     </div>
 
     <main class="main">
-      <section class="margin-x-wrapper padding-y-section-outside-xl">
+      <section>
         <article>
           <h2>My Journey</h2>
           <figure>
             <img
-            src="/images/nafme-cropped.jpg"
-            alt="Ryan Furrer and friends at a Music Education conference."
-          />
-            <figcaption class="text-secondary"><small>Ryan Furrer and friends at a Music Education conference.
-            </small></figcaption>
+              src="/images/nafme-cropped.jpg"
+              alt="Ryan Furrer and friends at a Music Education conference."
+            />
+            <figcaption>
+              <small
+                >Ryan Furrer and friends at a Music Education conference.
+              </small>
+            </figcaption>
           </figure>
-          <p>After graduating high school in 2009, I went to college for Music Education and Performance at the Crane School of Music at SUNY Potsdam in Potsdam, NY. After failing out of the program after 1.5 years for academic reasons, I then transferred to Suffolk County Community College back at home on Long Island, NY. After another 2 years there, I transferred to the Aaron Copland School of Music at CUNY Queens in Flushing, NY where I continued to study Music Education. </p>
-          <p>I then left CUNY Queens to work full-time as clearly school was not for me. I continued to teach privately, work full-time, and perform at weddings, in orchestras, or in musicals.</p>
-          <p>Music was my first love and passion in life, I pursued it as much as I could but without a college degree there was no way I could teach in a public school and I was not commited enough to the performance life to make that my sole source of income. This was the first time I thought about moving my career to something having to do with technology - be it IT or some sort of software engineering job.</p>
+          <p>
+            After graduating high school in 2009, I went to college for Music
+            Education and Performance at the Crane School of Music at SUNY
+            Potsdam in Potsdam, NY. After failing out of the program after 1.5
+            years for academic reasons, I then transferred to Suffolk County
+            Community College back at home on Long Island, NY. After another 2
+            years there, I transferred to the Aaron Copland School of Music at
+            CUNY Queens in Flushing, NY where I continued to study Music
+            Education.
+          </p>
+          <p>
+            I then left CUNY Queens to work full-time as clearly school was not
+            for me. I continued to teach privately, work full-time, and perform
+            at weddings, in orchestras, or in musicals.
+          </p>
+          <p>
+            Music was my first love and passion in life, I pursued it as much as
+            I could but without a college degree there was no way I could teach
+            in a public school and I was not commited enough to the performance
+            life to make that my sole source of income. This was the first time
+            I thought about moving my career to something having to do with
+            technology - be it IT or some sort of software engineering job.
+          </p>
           <h3>Indecisiveness Strikes</h3>
-          <p>After deciding to commit to pursuing a new career, I started with Front-End Web Development as I had always been interested in creating websites and had little to no idea how it was done. I barely started studying HTML and CSS when I decided then to pursue becoming an IT worker, as I had always been good at fixing computers and issues plaguing users - I was (and still am) the family IT guy. <small><a href="https://xkcd.com/627" target="_blank" rel="noopener noreferrer">Relevant xkcd comic</a></small>.</p>
+          <p>
+            After deciding to commit to pursuing a new career, I started with
+            Front-End Web Development as I had always been interested in
+            creating websites and had little to no idea how it was done. I
+            barely started studying HTML and CSS when I decided then to pursue
+            becoming an IT worker, as I had always been good at fixing computers
+            and issues plaguing users - I was (and still am) the family IT guy.
+            (<a
+              href="https://xkcd.com/627"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Relevant xkcd comic</a
+            >).
+          </p>
 
-          <p>As I studied to take the CompTIA A+ exam which would allow me to be viable for jobs, I began looking at the beginning salaries and career climb for what I was interested in and decided to quit persuing IT work. I could not take that steep of a pay cut and I also felt like I was too old to start the climb - this was foolish, of course, but I did not know that when I was younger.</p>
+          <p>
+            As I studied to take the CompTIA A+ exam which would allow me to be
+            viable for jobs, I began looking at the beginning salaries and
+            career climb for what I was interested in and decided to quit
+            persuing IT work. I could not take that steep of a pay cut and I
+            also felt like I was too old to start the climb - this was foolish,
+            of course, but I did not know that when I was younger.
+          </p>
 
-          <p>Next I decide to begin studying AWS based on a recommendation from a friend. I began learning SQL and Python, as well as studying online at <a href="https://acloudguru.com/training-library/aws-cloud-training" target="_blank" rel="noopener noreferrer">A Cloud Guru</a>. I was very excited to know someone in the field and the amount of money I could make as an AWS Solutions Architect was quite impressive. Howver, it just did not click with me and so we come full-circle back to Front-End Web Development.</p>
+          <p>
+            Next I decide to begin studying AWS based on a recommendation from a
+            friend. I began learning SQL and Python, as well as studying online
+            at
+            <a
+              href="https://acloudguru.com/training-library/aws-cloud-training"
+              target="_blank"
+              rel="noopener noreferrer"
+              >A Cloud Guru</a
+            >. I was very excited to know someone in the field and the amount of
+            money I could make as an AWS Solutions Architect was quite
+            impressive. Howver, it just did not click with me and so we come
+            full-circle back to Front-End Web Development.
+          </p>
 
           <h3>Back to Front-End</h3>
-          <img src="/images/macbook.png" alt="MacBook Pro">
-          <p>Now that I decided once and for all to commit to Front-End Web Development, I knew I had a lot of work to do. I think what attracts me most about Front-End work is two things:</p>
+          <img src="/images/macbook.png" alt="MacBook Pro" />
+          <p>
+            Now that I decided once and for all to commit to Front-End Web
+            Development, I knew I had a lot of work to do. I think what attracts
+            me most about Front-End work is two things:
+          </p>
 
           <ul>
             <li><p>Being able to see your work instantly.</p></li>
-            <li><p>The design aspect of it still lets me flex my creative muscles.</p></li>
+            <li>
+              <p>
+                The design aspect of it still lets me flex my creative muscles.
+              </p>
+            </li>
           </ul>
 
-          <p>So I got busy studyng and building after work. It has been a number of years as I've gone through phases of intense focus to phases of not coding at all. My most recent stint of almost no coding was between August 2021 and the end of December 2021. Part of this was a lot of real life reasons such as:</p>
+          <p>
+            So I got busy studyng and building after work. It has been a number
+            of years as I've gone through phases of intense focus to phases of
+            not coding at all. My most recent stint of almost no coding was
+            between August 2021 and the end of December 2021. Part of this was a
+            lot of real life reasons such as:
+          </p>
 
           <ul>
             <li>
@@ -183,7 +282,14 @@
             </li>
           </ul>
 
-          <p>That said, I absolutely <em>love</em> Front-End work. It captivates me so much and seeing what I write be put into the world brings me intense joy and fulfillment. I also blog and have a newsletter as I try to give back to the community that has given me so much. I truly feel I am a community-taught Web Developer. As much as it can be toxic, there is a lot of good in it as well.</p>
+          <p>
+            That said, I absolutely <em>love</em> Front-End work. It captivates
+            me so much and seeing what I write be put into the world brings me
+            intense joy and fulfillment. I also blog and have a newsletter as I
+            try to give back to the community that has given me so much. I truly
+            feel I am a community-taught Web Developer. As much as it can be
+            toxic, there is a lot of good in it as well.
+          </p>
         </article>
       </section>
     </main>
@@ -191,32 +297,33 @@
     <footer id="footer">
       <div class="footer-container">
         <div id="footer-name">
-          <p class="text-primary text-lg">Ryan Furrer</p>
-          <p class="text-secondary text-lg">
-            A community-taught Front-End Web Developer
+          <p class="text-lg"><strong>Ryan Furrer</strong></p>
+          <p class="text-lg">
+            A community-taught <br />
+            Front-End Web Developer
           </p>
           <div id="social-links">
             <a
               href="#"
-              class="text-secondary ph-github-logo""
+              class="ph-github-logo"
               target="_blank"
               rel="noopener noreferrer"
             ></a>
             <a
               href="#"
-              class="text-secondary ph-linkedin-logo"
+              class="ph-linkedin-logo"
               target="_blank"
               rel="noopener noreferrer"
             ></a>
             <a
               href="#"
-              class="text-secondary ph-twitter-logo"
+              class="ph-twitter-logo"
               target="_blank"
               rel="noopener noreferrer"
             ></a>
             <a
               href="#"
-              class="text-secondary ph-instagram-logo"
+              class="ph-instagram-logo"
               target="_blank"
               rel="noopener noreferrer"
             ></a>
@@ -225,29 +332,62 @@
 
         <div class="two-col-grid">
           <div id="contact">
-            <p class="text-primary">Contact</p>
-            <a href="/contact/email" rel="noopener noreferrer" class="text-secondary">Email Ryan</a>
+            <p><strong>Contact</strong></p>
+            <a href="/contact/email" rel="noopener noreferrer">Email Ryan</a>
             <!--Link to page with contact form-->
-            <a href="/contact/video-call" rel="noopener noreferrer" class="text-secondary">Call Ryan</a>
+            <a href="/contact/video-call" rel="noopener noreferrer"
+              >Call Ryan</a
+            >
             <!--Link to page explaining to schedule on Calendly-->
           </div>
 
           <div id="sitemap">
-            <p class="text-primary">Sitemap</p>
+            <p><strong>Sitemap</strong></p>
             <ul role="list">
-              <li><a href="https://theryanfurrer-2022.onrender.com/" rel="noopener noreferrer" class="text-secondary">Home</a></li>
-              <li><a href="https://codingcatchup.com/" target="_blank" rel="noopener noreferrer" class="text-secondary">Blog</a></li>
-              <li><a href="https://theryanfurrer-2022.onrender.com/#projects" rel="noopener noreferrer" class="text-secondary">Projects</a></li>
-              <li><a href="https://theryanfurrer-2022.onrender.com/about" rel="noopener noreferrer" class="text-secondary">About</a></li>
-              <li><a href="https://theryanfurrer-2022.onrender.com/contact"  rel="noopener noreferrer"class="text-secondary">Contact</a></li>
+              <li>
+                <a
+                  href="https://theryanfurrer-2022.onrender.com/"
+                  rel="noopener noreferrer"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://codingcatchup.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://theryanfurrer-2022.onrender.com/#projects"
+                  rel="noopener noreferrer"
+                  >Projects</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://theryanfurrer-2022.onrender.com/about"
+                  rel="noopener noreferrer"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://theryanfurrer-2022.onrender.com/contact"
+                  rel="noopener noreferrer"
+                  >Contact</a
+                >
+              </li>
               <!--Link to page asking if they'd like to email or setup Calendly call, then link to each respective page-->
             </ul>
           </div>
         </div>
 
         <div id="newsletter">
-          <p class="text-primary">Newsletter</p>
-          <p class="text-secondary">
+          <p><strong>Newsletter</strong></p>
+          <p>
             Subscribe to stay in the know for when I publish new articles, find
             interesting things on the web, and more!
           </p>
@@ -260,11 +400,9 @@
               target="_blank"
             >
               <div class="revue-form-group">
-                <label for="member_first_name" class="text-secondary"
-                  >First name</label
-                >
+                <label for="member_first_name">First name</label>
                 <input
-                  class="revue-form-field block bg-secondary"
+                  class="revue-form-field block"
                   type="text"
                   name="member[first_name]"
                   id="member_first_name"
@@ -272,9 +410,9 @@
                 />
               </div>
               <div class="revue-form-group">
-                <label for="member_email" class="text-secondary">Email</label>
+                <label for="member_email">Email</label>
                 <input
-                  class="revue-form-field block bg-secondary"
+                  class="revue-form-field block"
                   type="email"
                   name="member[email]"
                   id="member_email"
@@ -283,14 +421,13 @@
               <div class="revue-form-actions">
                 <input
                   type="submit"
-                  class="block"
                   value="Subscribe"
                   name="member[subscribe]"
                   id="member_submit"
                 />
               </div>
               <div class="revue-form-footer">
-                <p class="text-secondary light-font">
+                <p class="light-font">
                   <small
                     >By subscribing, you agree with Revue's
                     <a target="_blank" href="https://www.getrevue.co/terms"
@@ -313,12 +450,10 @@
         </div>
       </div>
       <div id="legal">
-        <p class="text-secondary light-font">
+        <p class="light-font">
           <small
             >All rights reservered &copy;
-            <a
-              href="https://theryanfurrer.dev/"
-              rel="noopener noreferrer"
+            <a href="https://theryanfurrer.dev/" rel="noopener noreferrer"
               >Ryan Furrer</a
             >
             <span id="footer-year">2022</span></small

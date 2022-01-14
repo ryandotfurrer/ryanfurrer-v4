@@ -137,6 +137,7 @@ figure > img {
 }
 
 figcaption {
+  color: var(--text-secondary);
   margin-bottom: 1.5rem;
   text-align: center;
 
@@ -386,8 +387,10 @@ i {
           margin-bottom: 3rem;
           .tech-list {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
             gap: 1rem;
+            max-width: 100%;
 
             li {
               background-color: var(--bg-tertiary);
