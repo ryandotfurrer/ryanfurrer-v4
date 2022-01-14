@@ -67,6 +67,8 @@ body > footer {
 ul[role='list'],
 ol[role='list'] {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 /* Make images easier to work with */
@@ -76,6 +78,7 @@ video,
 canvas,
 svg {
   display: block;
+  height: auto;
   max-width: 100%;
 }
 
