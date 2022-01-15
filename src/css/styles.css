@@ -596,10 +596,6 @@ i {
   display: block;
 }
 
-#footer .footer-container #newsletter #revue-embed form div label {
-  display: inline-block;
-}
-
 #footer .footer-container #newsletter #revue-embed form div input {
   border-radius: 0.5rem;
   border: none;
@@ -609,16 +605,16 @@ i {
   font-size: inherit;
   color: var(--text-primary);
   background-color: var(--bg-secondary);
+  width: 100%;
 }
 
 #footer .footer-container #newsletter #revue-embed form div #member_submit {
   background-color: var(--text-secondary);
-  border-radius: 11rem;
+  border-radius: 5em;
   color: var(--bg-primary);
   cursor: pointer;
   transition: background-color 0.3s ease;
   padding: 0;
-  border-radius: 5em;
   padding: 0.75em 1.5em;
 }
 
@@ -629,4 +625,49 @@ i {
 #footer .footer-container #newsletter #revue-embed .revue-form-footer > p {
   line-height: 1;
   margin-bottom: 1.5rem;
+}
+
+.form-section {
+  background: var(--bg-secondary);
+}
+
+.form-section .form-container {
+  width: 100%;
+}
+
+.form-section .form-container .form label {
+  color: var(--text-primary);
+}
+
+.form-section .form-container .form input,
+.form-section .form-container .form textarea {
+  border-radius: 0.5rem;
+  border: none;
+  display: block;
+  margin-top: 0.75rem;
+  margin-bottom: 1.5rem;
+  padding: 2rem;
+  font-size: inherit;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  width: 100%;
+}
+
+.form-section .form-container .form textarea {
+  height: 25vh;
+  resize: none;
+}
+
+.form-section .form-container .form button {
+  background-color: var(--text-secondary);
+  border-radius: 5em;
+  color: var(--bg-primary);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 0;
+  padding: 1.5em 3em;
+}
+
+.form-section .form-container .form button:hover {
+  background-color: var(--text-primary);
 }

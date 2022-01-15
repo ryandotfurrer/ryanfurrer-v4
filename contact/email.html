@@ -69,7 +69,7 @@
     <div class="nav-container">
       <nav class="nav">
         <div>
-          <h1><a href="../" rel="noopener noreferrer">Ryan Furrer</a></h1>
+          <h1><a href="/" rel="noopener noreferrer">Ryan Furrer</a></h1>
         </div>
         <div class="navlist-container">
           <ul role="list" id="mobile-navlist" class="nav-list">
@@ -114,12 +114,48 @@
     </div>
 
     <div class="header-container">
-      <header id="header">
-        <h2>Coming Soon</h2>
+      <header class="header">
+        <div class="header-image-container">
+          <img
+            src="https://doodleipsum.com/700x700/hand-drawn?i=91f7a6c433fd73c95da86b8ffb8b7b02"
+            alt="Placeholder image"
+            class="header-image"
+          />
+        </div>
+        <div class="header-text">
+          <h2>Email Ryan</h2>
+          <p class="p-xl">
+            Fill out the form below and I will get back to your inquiry as soon
+            as possible. If you'd like to setup a video call with me, you can do
+            so by
+            <a href="/contact/chat-with-ryan.html" rel="noopener noreferrer">
+              scheduling a meeting via Calendly</a
+            >.
+          </p>
+        </div>
       </header>
     </div>
 
-    <main class="main"></main>
+    <main class="main">
+      <section class="form-section">
+        <div class="form-container">
+          <form name="contact" class="form" netlify>
+            <p>
+              <label>Name<input type="text" name="name" class="block" /></label>
+            </p>
+            <p>
+              <label>Email<input type="email" name="email" /></label>
+            </p>
+            <p>
+              <label>Message<textarea name="message"></textarea></label>
+            </p>
+            <p class="p-xl">
+              <button type="submit" class="form-submit-button">Send</button>
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
 
     <footer id="footer">
       <div class="footer-container">
@@ -163,11 +199,9 @@
             <a href="/contact/email.html" rel="noopener noreferrer"
               >Email Ryan</a
             >
-            <!--Link to page with contact form-->
-            <a href="/contact/video-call.html" rel="noopener noreferrer"
-              >Call Ryan</a
+            <a href="/contact/chat-with-ryan.html" rel="noopener noreferrer"
+              >Chat with Ryan</a
             >
-            <!--Link to page explaining to schedule on Calendly-->
           </div>
 
           <div id="sitemap">

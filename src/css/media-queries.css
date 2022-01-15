@@ -181,6 +181,18 @@
   #footer .footer-container {
     grid-template-columns: 1fr 1fr 1fr;
   }
+
+  .form-section {
+    margin: 0 auto;
+    padding: 4vw;
+    max-width: calc(630px + 2rem);
+  }
+
+  .form-section .form-container form input,
+  .form-section .form-container form textarea {
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+  }
 }
 
 /*-----1080px or wider styling-----*/
