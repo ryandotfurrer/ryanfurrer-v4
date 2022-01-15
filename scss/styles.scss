@@ -690,21 +690,24 @@ i {
       textarea {
         height: 25vh;
         resize: none;
-        // width: 100%;
       }
 
       button {
-        background-color: var(--text-secondary);
         border-radius: 5em;
-        color: var(--bg-primary);
-        cursor: pointer;
-        transition: background-color 0.3s ease;
+        border: 2px solid transparent;
+        background-color: var(--color-accent-100);
+        color: var(--color-dark-200);
+        display: block;
+        margin-top: 3rem;
+        text-align: center;
+        transition: background-color 0.3s ease, border 0.3s ease;
         padding: 0;
         padding: 1.5em 3em;
-        // width: 100%;
+        width: 100%;
 
         &:hover {
-          background-color: var(--text-primary);
+          background-color: var(--color-accent-200);
+          border-color: var(--text-primary);
         }
       }
     }

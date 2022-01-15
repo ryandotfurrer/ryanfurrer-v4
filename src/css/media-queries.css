@@ -188,10 +188,14 @@
     max-width: calc(630px + 2rem);
   }
 
-  .form-section .form-container form input,
-  .form-section .form-container form textarea {
+  .form-section .form-container .form input,
+  .form-section .form-container .form textarea {
     margin-top: 1.5rem;
     margin-bottom: 3rem;
+  }
+
+  .form-section .form-container .form button {
+    max-width: 35%;
   }
 
   #calendly-link {
@@ -302,6 +306,10 @@
 
   #cta a {
     max-width: 11em;
+  }
+
+  #member_submit {
+    max-width: 35%;
   }
 
   #calendly-link {
