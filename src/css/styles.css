@@ -671,3 +671,18 @@ i {
 .form-section .form-container .form button:hover {
   background-color: var(--text-primary);
 }
+
+#calendly-link {
+  border: 2px solid transparent;
+  background-color: var(--color-accent-100);
+  color: var(--color-dark-200);
+  display: block;
+  margin-top: 3rem;
+  text-align: center;
+  transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+#calendly-link:hover {
+  background-color: var(--color-accent-200);
+  border-color: var(--text-primary);
+}

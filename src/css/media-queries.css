@@ -193,6 +193,10 @@
     margin-top: 1.5rem;
     margin-bottom: 3rem;
   }
+
+  #calendly-link {
+    max-width: 80%;
+  }
 }
 
 /*-----1080px or wider styling-----*/
@@ -298,5 +302,9 @@
 
   #cta a {
     max-width: 11em;
+  }
+
+  #calendly-link {
+    max-width: 35%;
   }
 }
