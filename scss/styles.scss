@@ -115,16 +115,16 @@ body {
 
 section,
 aside {
-  margin-top: 10vh;
-  margin-bottom: 5vh;
-}
-
-section,
-aside {
+  border-radius: 0.5rem;
   display: flex;
   justify-content: center;
-  border-radius: 0.5rem;
+  margin-top: 10vh;
+  margin-bottom: 5vh;
   padding: 2rem;
+}
+
+section {
+  scroll-margin-top: 3rem;
 }
 
 img {
