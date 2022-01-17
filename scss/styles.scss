@@ -104,13 +104,18 @@
 
 body {
   background: var(--bg-primary);
-  max-width: 140ch;
+  max-width: 90rem;
   padding: 0 1rem;
 
   --duration: 0.7s;
   --timing: ease;
   transition: color var(--duration) var(--timing),
     background-color var(--duration) var(--timing);
+}
+
+header,
+body {
+  max-width: 85rem;
 }
 
 section,
@@ -222,7 +227,7 @@ i {
 
 /*-----Specific Styling-----*/
 .nav-container {
-  padding-top: 3rem;
+  padding-top: 1.5rem;
   a {
     text-underline-offset: 0.25rem;
   }

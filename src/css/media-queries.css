@@ -98,6 +98,10 @@
     max-width: 35rem;
   }
 
+  .nav-container {
+    padding-top: 3rem;
+  }
+
   .nav-list {
     gap: 3em;
   }

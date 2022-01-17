@@ -91,18 +91,28 @@
 
 body {
   background: var(--bg-primary);
-  max-width: 140ch;
+  max-width: 90rem;
   padding: 0 1rem;
   --duration: 0.7s;
   --timing: ease;
+  -webkit-transition: color var(--duration) var(--timing), background-color var(--duration) var(--timing);
   transition: color var(--duration) var(--timing), background-color var(--duration) var(--timing);
+}
+
+header,
+body {
+  max-width: 85rem;
 }
 
 section,
 aside {
   border-radius: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 10vh;
   margin-bottom: 5vh;
   padding: 2rem;
@@ -210,7 +220,7 @@ i {
 
 /*-----Specific Styling-----*/
 .nav-container {
-  padding-top: 3rem;
+  padding-top: 1.5rem;
 }
 
 .nav-container a {
@@ -218,9 +228,15 @@ i {
 }
 
 .nav-container .nav {
-  align-items: baseline;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .nav-container .nav h1 > a {
@@ -228,6 +244,8 @@ i {
 }
 
 .nav-container .nav .navlist-container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -239,6 +257,7 @@ i {
 .nav-container .nav .navlist-container ul li a {
   display: block;
   height: 100%;
+  -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
   width: 100%;
 }
@@ -248,7 +267,11 @@ i {
 }
 
 .nav-container .nav #nav-btn-container {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 1rem;
 }
@@ -260,6 +283,7 @@ i {
   font-size: 1.5rem;
   padding: 0.5rem;
   text-align: center;
+  -webkit-transition: border-color 0.3s ease;
   transition: border-color 0.3s ease;
 }
 
@@ -290,8 +314,13 @@ i {
 
 .header-container .header .header-text .header-links {
   margin-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 1.5rem 0;
 }
 
@@ -300,6 +329,7 @@ i {
   color: var(--text-primary);
   display: block;
   text-align: center;
+  -webkit-transition: background-color 0.3s ease, border 0.3s ease;
   transition: background-color 0.3s ease, border 0.3s ease;
 }
 
@@ -322,6 +352,8 @@ i {
 }
 
 .read-more-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 0 0.5rem;
   margin-bottom: 3rem;
@@ -329,8 +361,12 @@ i {
 }
 
 .read-more-container a {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .read-more-container a:last-of-type {
@@ -339,6 +375,7 @@ i {
 
 .read-more-container a,
 .read-more-container i {
+  -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
 
@@ -349,9 +386,13 @@ i {
 }
 
 #about {
-  align-items: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
 }
 
 #about #profile-img-container img {
@@ -369,9 +410,12 @@ i {
 }
 
 #projects .wrapper .tabs .projects-header .tech-list-container .tech-list {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
   gap: 1rem;
   max-width: 100%;
 }
@@ -395,6 +439,8 @@ i {
 
 #projects .wrapper .tabs .tablist {
   border-bottom: 1px solid var(--text-secondary);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 0 1.5rem;
   margin-bottom: 1.5rem;
@@ -406,14 +452,21 @@ i {
 }
 
 #projects .wrapper .tabs .tablist button {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-bottom: 2px solid transparent;
   color: var(--text-secondary);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-size: 1rem;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  -webkit-transition: border-color 0.3s ease, color 0.3s ease;
   transition: border-color 0.3s ease, color 0.3s ease;
 }
 
@@ -432,8 +485,13 @@ i {
 }
 
 #projects .wrapper .tabs .project-panel .project-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 0.75rem 0;
 }
 
@@ -442,7 +500,9 @@ i {
   color: var(--text-secondary);
   font-size: 0.9rem;
   text-align: center;
+  -webkit-transition: border-color 0.3s ease;
   transition: border-color 0.3s ease;
+  -webkit-transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
   transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
 }
 
@@ -462,8 +522,10 @@ i {
 }
 
 #blog-container #blog-articles-container {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
   gap: 1.5rem 0;
 }
 
@@ -492,10 +554,15 @@ i {
 }
 
 #cta {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: var(--bg-secondary);
+  display: -ms-grid;
   display: grid;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #cta a {
@@ -505,6 +572,7 @@ i {
   display: block;
   font-size: 1rem;
   text-align: center;
+  -webkit-transition: background-color 0.3s ease, border 0.3s ease;
   transition: background-color 0.3s ease, border 0.3s ease;
 }
 
@@ -534,8 +602,10 @@ i {
 }
 
 #footer .footer-container {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
   gap: 1.5rem;
 }
 
@@ -548,7 +618,11 @@ i {
 }
 
 #footer .footer-container #footer-name #social-links {
-  align-items: baseline;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 0 1rem;
 }
@@ -556,6 +630,7 @@ i {
 #footer .footer-container #footer-name #social-links a {
   font-size: 2.5rem;
   text-decoration: none;
+  -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
 
@@ -564,14 +639,17 @@ i {
 }
 
 #footer .footer-container .two-col-grid {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   gap: 0 1.5rem;
 }
 
 #footer .footer-container .two-col-grid a {
   color: var(--text-secondary);
   text-underline-offset: 0.25rem;
+  -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
 
@@ -613,6 +691,7 @@ i {
   border-radius: 5em;
   color: var(--bg-primary);
   cursor: pointer;
+  -webkit-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
   padding: 0;
   padding: 0.75em 1.5em;
@@ -666,6 +745,7 @@ i {
   display: block;
   margin-top: 3rem;
   text-align: center;
+  -webkit-transition: background-color 0.3s ease, border 0.3s ease;
   transition: background-color 0.3s ease, border 0.3s ease;
   padding: 0;
   padding: 1.5em 3em;
@@ -684,6 +764,7 @@ i {
   display: block;
   margin-top: 3rem;
   text-align: center;
+  -webkit-transition: background-color 0.3s ease, border 0.3s ease;
   transition: background-color 0.3s ease, border 0.3s ease;
 }
 
