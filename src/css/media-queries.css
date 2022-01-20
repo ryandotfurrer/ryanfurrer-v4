@@ -265,7 +265,7 @@
   }
 
   #projects .wrapper .tabs .tablist button i {
-    font-size: 3rem;
+    font-size: 2rem;
     transition: opacity 0.5s ease, transform 0.5s ease;
   }
 
