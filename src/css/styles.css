@@ -85,8 +85,17 @@
   padding: 0.75em 1.5em;
 }
 
+.m-auto {
+  margin: 0 auto;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url(/fonts/outfit.ttf);
+}
+
 * {
-  font-family: 'Outfit', Helvetica, Arial, sans-serif;
+  font-family: "Outfit", Helvetica, Arial, sans-serif;
 }
 
 body {
