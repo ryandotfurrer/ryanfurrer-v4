@@ -18,13 +18,13 @@
 [x]Fix layout issue in blog section in Safari
   -Concerns breakpoints and align-items
 [x]Style Projects section
-[]Adjust sizing as needed
+[x]Adjust sizing as needed
 [x]Adjust colors as needed
-[]Create pages
-  []About
-  []Contact
-    []Email form
-    []Calendly page
+[x]Create pages
+  [x]About
+  [x]Contact
+    [x]Email form
+    [x]Calendly page
   []Blog
     []Look into CMS for this to make it better
 [x]Link up anchor tags

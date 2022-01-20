@@ -1,8 +1,8 @@
 :root {
   --color-light-100: #f5f5f5;
-  --color-light-150: #e1e7eb;
+  --color-light-150: #DDE4E9;
   --color-light-200: #a5bbca;
-  --color-dark-100: #556c77;
+  --color-dark-100: #394C56;
   --color-dark-150: #263640;
   --color-dark-200: #1c2830;
   --color-accent-100: #f4bb44;
@@ -452,7 +452,7 @@ i {
 }
 
 #projects .wrapper .tabs .projects-header .tech-list-container .tech-list li p {
-  color: var(--bg-primary);
+  color: var(--text-primary);
 }
 
 #projects .wrapper .tabs .tablist {
