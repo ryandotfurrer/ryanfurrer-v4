@@ -135,13 +135,13 @@
         <div class="form-container">
           <form name="contact" class="form" netlify>
             <p>
-              <label>Name<input type="text" name="name" class="block" /></label>
+              <label>Name<input type="text" name="name" class="block" required autocomplete="on"/></label>
             </p>
             <p>
-              <label>Email<input type="email" name="email" /></label>
+              <label>Email<input type="email" name="email" required autocomplete="on"/></label>
             </p>
             <p>
-              <label>Message<textarea name="message"></textarea></label>
+              <label>Message<textarea required name="message" autocorrect="on"></textarea></label>
             </p>
             <p class="p-xl">
               <button type="submit" class="form-submit-button">Send</button>

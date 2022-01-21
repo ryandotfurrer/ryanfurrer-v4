@@ -28,34 +28,6 @@
   --text-accent: var(--color-accent-100);
 }
 
-.bg-primary {
-  background-color: var(--bg-primary);
-}
-
-.bg-secondary {
-  background-color: var(--bg-secondary);
-}
-
-.bg-tertiary {
-  background-color: var(--bg-tertiary);
-}
-
-.bg-accent {
-  background-color: var(--color-accent-100);
-}
-
-.text-primary {
-  color: var(--text-primary);
-}
-
-.text-secondary {
-  color: var(--text-secondary);
-}
-
-.text-accent {
-  color: var(--text-accent);
-}
-
 .light-font {
   font-weight: 300;
 }
@@ -600,6 +572,7 @@ i {
 }
 
 #cta strong {
+  background-color: var(--text-accent);
   color: var(--color-dark-200);
   padding: 0.25em 0.5em;
 }
