@@ -198,14 +198,20 @@ i {
         li {
           margin-left: 0;
           margin-bottom: 0;
+
+          &:hover {
+            & * {
+              color: var(--text-primary);
+            }
+          }
           a {
             display: block;
             height: 100%;
             transition: color 0.3s ease;
             width: 100%;
 
-            &:hover {
-              color: var(--text-primary);
+            i {
+              margin-left: .5em;
             }
           }
         }
@@ -648,8 +654,18 @@ html[data-theme='dark'] {
 
           li {
             margin-left: 0;
+
+            &:hover {
+              & * {
+                color: var(--text-primary);
+              }
+            }
             a {
               display: block;
+
+              i {
+                margin-left: .5em;
+              }
             }
           }
         }

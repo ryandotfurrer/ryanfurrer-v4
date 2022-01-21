@@ -248,6 +248,10 @@ i {
   margin-bottom: 0;
 }
 
+.nav-container .nav .navlist-container ul li:hover * {
+  color: var(--text-primary);
+}
+
 .nav-container .nav .navlist-container ul li a {
   display: block;
   height: 100%;
@@ -256,8 +260,8 @@ i {
   width: 100%;
 }
 
-.nav-container .nav .navlist-container ul li a:hover {
-  color: var(--text-primary);
+.nav-container .nav .navlist-container ul li a i {
+  margin-left: .5em;
 }
 
 .nav-container .nav #nav-btn-container {
@@ -749,8 +753,16 @@ html[data-theme='dark'] .sun-and-moon > .moon > circle {
   margin-left: 0;
 }
 
+#footer .footer-container .two-col-grid #sitemap ul li:hover * {
+  color: var(--text-primary);
+}
+
 #footer .footer-container .two-col-grid #sitemap ul li a {
   display: block;
+}
+
+#footer .footer-container .two-col-grid #sitemap ul li a i {
+  margin-left: .5em;
 }
 
 #footer .footer-container #newsletter #revue-embed form div input {
