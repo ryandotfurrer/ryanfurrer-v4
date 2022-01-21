@@ -99,10 +99,6 @@
     max-width: 35rem;
   }
 
-  .nav-list {
-    gap: 2em;
-  }
-
   .header-container .header {
     align-items: center;
     display: grid;
@@ -205,7 +201,7 @@
 }
 
 /*-----1024px or wider styling-----*/
-@media only screen and (min-width: 1024) {
+@media only screen and (min-width: 1024px) {
   h1 {
     font-size: 3.052rem;
   }
@@ -224,6 +220,10 @@
 
   .nav-container .nav div h1 {
     font-size: 2rem;
+  }
+
+  .nav-list {
+    gap: 2em;
   }
 
   .header-container .header {
