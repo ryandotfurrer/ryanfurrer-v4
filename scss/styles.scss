@@ -1,39 +1,4 @@
-// Establish base colors using CSS Variables
-:root {
-  --color-light-100: #f5f5f5;
-  --color-light-150: #DDE4E9;
-  --color-light-200: #a5bbca;
-
-  --color-dark-100: #394C56;
-  --color-dark-150: #263640;
-  --color-dark-200: #1c2830;
-
-  --color-accent-100: #f4bb44;
-  --color-accent-200: #f2ad18;
-  font-size: 18px;
-}
-
-// Assigns Light Theme colors to appropriate colors
-// .light class is on HTML element by default
-.light {
-  --bg-primary: var(--color-light-100); //#F5F5F5
-  --bg-secondary: var(--color-light-150); //#C6D3DD
-  --bg-tertiary: var(--color-light-200); //#a5bbca
-  --text-primary: var(--color-dark-200); //#1C2830
-  --text-secondary: var(--color-dark-100); //#556C77
-  --text-accent: var(--color-accent-200); // #f2ad18
-}
-
-// Assigns Dark Theme colors to appropriate colors
-// .dark class is added onto the HTML element via theme-change.js in the js folder
-.dark {
-  --bg-primary: var(--color-dark-200); //#1C2830;
-  --bg-secondary: var(--color-dark-150); //#556C77;
-  --bg-tertiary: var(--color-dark-100); //#263640;
-  --text-primary: var(--color-light-100); //#F5F5F5;
-  --text-secondary: var(--color-light-200); //#C6D3DD;
-  --text-accent: var(--color-accent-100); // #f4bb44
-}
+@import 'open-props';
 
 .light-font {
   font-weight: 300;
@@ -214,12 +179,16 @@ i {
     text-underline-offset: 0.25rem;
   }
   .nav {
-    align-items: baseline;
+    align-items: center;
     display: flex;
     justify-content: space-between;
 
-    h1 > a {
-      color: var(--text-primary);
+    h1 {
+      margin-bottom: 0;
+
+      > a {
+        color: var(--text-primary);
+      }
     }
 
     .navlist-container {
@@ -248,17 +217,62 @@ i {
       display: flex;
       gap: 1rem;
 
-      #theme-change {
-        border: 2px solid var(--text-secondary);
-        border-radius: 100%;
-        color: var(--text-primary);
-        font-size: 1.5rem;
-        padding: 0.5rem;
-        text-align: center;
-        transition: border-color 0.3s ease;
+      .theme-toggle {
+        --size: 2rem;
 
-        &:hover {
-          border-color: var(--text-primary);
+        background: none;
+        border: none;
+        padding: 0;
+
+        inline-size: var(--size);
+        block-size: var(--size);
+        aspect-ratio: 1;
+        border-radius: 50%;
+
+        cursor: pointer;
+        touch-action: manipulation;
+        -webkit-tap-highlight-color: transparent;
+        outline-offset: 5px;
+
+        & > svg {
+          inline-size: 100%;
+          block-size: 100%;
+          stroke-linecap: round;
+        }
+
+        @media (hover: none) {
+          --size: 48px;
+        }
+
+        .sun-and-moon {
+          & > .sun {
+            transition: transform .5s var(--ease-elastic-3);
+          }
+
+          & > :is(.moon, .sun, .sun-beams) {
+            transform-origin: center center;
+          }
+
+          & > :is(.moon, .sun) {
+            fill: var(--text-secondary);
+
+            &:hover, :focus-visible {
+              fill: var(--text-primary);
+            }
+          }
+
+          & > .sun-beams {
+            stroke: var(--text-secondary);
+            stroke-width: 2px;
+            transition:
+              transform .5s var(--ease-elastic-4),
+              opacity .5s var(--ease-3)
+            ;
+
+            &:is(:hover, :focus-visible) & {
+              stroke: var(--text-primary);
+            }
+          }
         }
       }
 
@@ -273,6 +287,34 @@ i {
     }
   }
 }
+
+html[data-theme='dark'] {
+  .sun-and-moon {
+      & {
+        & > .sun {
+          transform: scale(1.75);
+          transition-timing-function: var(--ease-3);
+          transition-duration: .25s;
+        }
+
+        & > .sun-beams {
+          opacity: 0;
+          transform: rotateZ(-25deg);
+          transition-duration: .15s;
+        }
+
+        & > .moon > circle {
+          transform: translateX(-7px);
+
+          @supports (cx: 1) {
+            transform: translateX(0);
+            cx: 17;
+          }
+        }
+      }
+    }
+  }
+
 .header-container {
   margin-top: 3rem;
 

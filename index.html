@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="light">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -54,6 +54,7 @@
     <!--Linking Stylesheets, Fonts, etc.-->
     <link rel="canonical" href="https://theryanfurrer.dev" />
     <script src="https://kit.fontawesome.com/dec2579292.js" crossorigin="anonymous" async defer></script>
+    <script src="js/theme-toggle.js"></script>
     <link rel="stylesheet" href="/src/css/css-reset.css">
     <link rel="stylesheet" href="/src/css/styles.css" />
     <link rel="stylesheet" href="/src/css/media-queries.css" />
@@ -63,7 +64,7 @@
     <div class="nav-container">
       <nav class="nav">
         <div>
-          <h1><a href="/" rel="noopener noreferrer">Ryan Furrer</a></h1>
+          <h1><a id="title" href="/" rel="noopener noreferrer">Ryan Furrer</a></h1>
         </div>
         <div class="navlist-container">
           <ul role="list" id="mobile-navlist" class="nav-list">
@@ -94,11 +95,30 @@
         </div>
         <div id="nav-btn-container">
           <button
-            id="theme-change"
-            class="padding-x-1 padding-y-1 far fa-sun"
-            role="switch"
-            title="Switch Theme"
-          ></button>
+            class="theme-toggle"
+            id="theme-toggle"
+            title="Toggles light & dark"
+            aria-label="auto"
+            aria-live="polite"
+          >
+          <svg class="sun-and-moon" aria-hidden="true" width="48" height="48" viewBox="0 0 24 24">
+            <circle class="sun" cx="12" cy="12" r="6" mask="url(#moon-mask)" fill="currentColor" />
+            <g class="sun-beams" stroke="currentColor">
+              <line x1="12" y1="1" x2="12" y2="3" />
+              <line x1="12" y1="21" x2="12" y2="23" />
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+              <line x1="1" y1="12" x2="3" y2="12" />
+              <line x1="21" y1="12" x2="23" y2="12" />
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+            </g>
+            <mask class="moon" id="moon-mask">
+              <rect x="0" y="0" width="100%" height="100%" fill="white" />
+              <circle cx="24" cy="10" r="6" fill="black" />
+            </mask>
+          </svg>
+          </button>
           <button id="hamburger" name="Mobile Menu" aria-label="Mobile Menu">
             <span class="bar"></span>
             <span class="bar"></span>
@@ -111,7 +131,6 @@
     <section class="header-container">
       <header class="header">
         <div class="header-image-container">
-
           <img
           id="home-header-image"
           class="header-image"
@@ -457,6 +476,7 @@
       </div>
     </footer>
 
+    <!--#JS Scripts-->
     <script src="js/get-current-year.js" async defer></script>
     <script src="/js/theme-change.js" async defer></script>
     <script src="/js/mobile-menu.js" async defer></script>

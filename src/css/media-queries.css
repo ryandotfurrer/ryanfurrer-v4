@@ -1,3 +1,50 @@
+/* Establish base colors using CSS Variables */
+:root {
+  --color-light-100: #f5f5f5;
+  --color-light-150: #DDE4E9;
+  --color-light-200: #a5bbca;
+
+  --color-dark-100: #394C56;
+  --color-dark-150: #263640;
+  --color-dark-200: #1c2830;
+
+  --color-accent-100: #f4bb44;
+  --color-accent-200: #f2ad18;
+  font-size: 18px;
+}
+
+/* Assigns Light Theme colors to appropriate colors */
+/* .light class is on HTML element by default */
+html[data-theme='light']{
+  --bg-primary: var(--color-light-100);
+  --bg-secondary: var(--color-light-150);
+  --bg-tertiary: var(--color-light-200);
+  --text-primary: var(--color-dark-200);
+  --text-secondary: var(--color-dark-100);
+  --text-accent: var(--color-accent-200);
+}
+
+/* html[data-theme='light'] #home-header-image {
+  background-image: url(/images/portfolio-image-light-theme.webp);
+  background-size: contain;
+} */
+
+/* Assigns Dark Theme colors to appropriate colors */
+/* .dark class is added onto the HTML element via theme-change.js in the js folder */
+html[data-theme='dark'] {
+  --bg-primary: var(--color-dark-200);
+  --bg-secondary: var(--color-dark-150);
+  --bg-tertiary: var(--color-dark-100);
+  --text-primary: var(--color-light-100);
+  --text-secondary: var(--color-light-200);
+  --text-accent: var(--color-accent-100);
+}
+
+/* html[data-theme='dark'] #home-header-image {
+  background-image: url(/images/portfolio-image-dark-theme.webp);
+  background-size: contain;
+} */
+
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
 

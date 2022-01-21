@@ -1,31 +1,39 @@
-:root {
-  --color-light-100: #f5f5f5;
-  --color-light-150: #DDE4E9;
-  --color-light-200: #a5bbca;
-  --color-dark-100: #394C56;
-  --color-dark-150: #263640;
-  --color-dark-200: #1c2830;
-  --color-accent-100: #f4bb44;
-  --color-accent-200: #f2ad18;
-  font-size: 18px;
-}
-
-.light {
-  --bg-primary: var(--color-light-100);
-  --bg-secondary: var(--color-light-150);
-  --bg-tertiary: var(--color-light-200);
-  --text-primary: var(--color-dark-200);
-  --text-secondary: var(--color-dark-100);
-  --text-accent: var(--color-accent-200);
-}
-
-.dark {
-  --bg-primary: var(--color-dark-200);
-  --bg-secondary: var(--color-dark-150);
-  --bg-tertiary: var(--color-dark-100);
-  --text-primary: var(--color-light-100);
-  --text-secondary: var(--color-light-200);
-  --text-accent: var(--color-accent-100);
+:where(html) {
+  --ease-1:cubic-bezier(.25,0,.5,1);
+  --ease-2:cubic-bezier(.25,0,.4,1);
+  --ease-3:cubic-bezier(.25,0,.3,1);
+  --ease-4:cubic-bezier(.25,0,.2,1);
+  --ease-5:cubic-bezier(.25,0,.1,1);
+  --ease-in-1:cubic-bezier(.25,0,1,1);
+  --ease-in-2:cubic-bezier(.50,0,1,1);
+  --ease-in-3:cubic-bezier(.70,0,1,1);
+  --ease-in-4:cubic-bezier(.90,0,1,1);
+  --ease-in-5:cubic-bezier(1,0,1,1);
+  --ease-out-1:cubic-bezier(0,0,.75,1);
+  --ease-out-2:cubic-bezier(0,0,.50,1);
+  --ease-out-3:cubic-bezier(0,0,.3,1);
+  --ease-out-4:cubic-bezier(0,0,.1,1);
+  --ease-out-5:cubic-bezier(0,0,0,1);
+  --ease-in-out-1:cubic-bezier(.1,0,.9,1);
+  --ease-in-out-2:cubic-bezier(.3,0,.7,1);
+  --ease-in-out-3:cubic-bezier(.5,0,.5,1);
+  --ease-in-out-4:cubic-bezier(.7,0,.3,1);
+  --ease-in-out-5:cubic-bezier(.9,0,.1,1);
+  --ease-elastic-1:cubic-bezier(.5,.75,.75,1.25);
+  --ease-elastic-2:cubic-bezier(.5,1,.75,1.25);
+  --ease-elastic-3:cubic-bezier(.5,1.25,.75,1.25);
+  --ease-elastic-4:cubic-bezier(.5,1.5,.75,1.25);
+  --ease-elastic-5:cubic-bezier(.5,1.75,.75,1.25);
+  --ease-squish-1:cubic-bezier(.5,-.1,.1,1.5);
+  --ease-squish-2:cubic-bezier(.5,-.3,.1,1.5);
+  --ease-squish-3:cubic-bezier(.5,-.5,.1,1.5);
+  --ease-squish-4:cubic-bezier(.5,-.7,.1,1.5);
+  --ease-squish-5:cubic-bezier(.5,-.9,.1,1.5);
+  --ease-step-1:steps(2);
+  --ease-step-2:steps(3);
+  --ease-step-3:steps(4);
+  --ease-step-4:steps(7);
+  --ease-step-5:steps(10);
 }
 
 .light-font {
@@ -210,15 +218,19 @@ i {
 }
 
 .nav-container .nav {
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.nav-container .nav h1 {
+  margin-bottom: 0;
 }
 
 .nav-container .nav h1 > a {
@@ -258,19 +270,65 @@ i {
   gap: 1rem;
 }
 
-.nav-container .nav #nav-btn-container #theme-change {
-  border: 2px solid var(--text-secondary);
-  border-radius: 100%;
-  color: var(--text-primary);
-  font-size: 1.5rem;
-  padding: 0.5rem;
-  text-align: center;
-  -webkit-transition: border-color 0.3s ease;
-  transition: border-color 0.3s ease;
+.nav-container .nav #nav-btn-container .theme-toggle {
+  --size: 2rem;
+  background: none;
+  border: none;
+  padding: 0;
+  inline-size: var(--size);
+  block-size: var(--size);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  cursor: pointer;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  outline-offset: 5px;
 }
 
-.nav-container .nav #nav-btn-container #theme-change:hover {
-  border-color: var(--text-primary);
+.nav-container .nav #nav-btn-container .theme-toggle > svg {
+  inline-size: 100%;
+  block-size: 100%;
+  stroke-linecap: round;
+}
+
+@media (hover: none) {
+  .nav-container .nav #nav-btn-container .theme-toggle {
+    --size: 48px;
+  }
+}
+
+.nav-container .nav #nav-btn-container .theme-toggle .sun-and-moon > .sun {
+  -webkit-transition: -webkit-transform 0.5s var(--ease-elastic-3);
+  transition: -webkit-transform 0.5s var(--ease-elastic-3);
+  transition: transform 0.5s var(--ease-elastic-3);
+  transition: transform 0.5s var(--ease-elastic-3), -webkit-transform 0.5s var(--ease-elastic-3);
+}
+
+.nav-container .nav #nav-btn-container .theme-toggle .sun-and-moon > :is(.moon, .sun, .sun-beams) {
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.nav-container .nav #nav-btn-container .theme-toggle .sun-and-moon > :is(.moon, .sun) {
+  fill: var(--text-secondary);
+}
+
+.nav-container .nav #nav-btn-container .theme-toggle .sun-and-moon > :is(.moon, .sun):hover, .nav-container .nav #nav-btn-container .theme-toggle .sun-and-moon > :is(.moon, .sun) :focus-visible {
+  fill: var(--text-primary);
+}
+
+.nav-container .nav #nav-btn-container .theme-toggle .sun-and-moon > .sun-beams {
+  stroke: var(--text-secondary);
+  stroke-width: 2px;
+  -webkit-transition: opacity 0.5s var(--ease-3), -webkit-transform 0.5s var(--ease-elastic-4);
+  transition: opacity 0.5s var(--ease-3), -webkit-transform 0.5s var(--ease-elastic-4);
+  transition: transform 0.5s var(--ease-elastic-4), opacity 0.5s var(--ease-3);
+  transition: transform 0.5s var(--ease-elastic-4), opacity 0.5s var(--ease-3), -webkit-transform 0.5s var(--ease-elastic-4);
+}
+
+.nav-container .nav #nav-btn-container .theme-toggle .sun-and-moon > .sun-beams:is(:hover, :focus-visible) .nav-container .nav #nav-btn-container .theme-toggle .sun-and-moon > .sun-beams {
+  stroke: var(--text-primary);
 }
 
 .nav-container .nav #nav-btn-container #hamburger {
@@ -280,6 +338,36 @@ i {
 
 .nav-container .nav #nav-btn-container #hamburger .bar {
   display: hidden;
+}
+
+html[data-theme='dark'] .sun-and-moon > .sun {
+  -webkit-transform: scale(1.75);
+          transform: scale(1.75);
+  -webkit-transition-timing-function: var(--ease-3);
+          transition-timing-function: var(--ease-3);
+  -webkit-transition-duration: .25s;
+          transition-duration: .25s;
+}
+
+html[data-theme='dark'] .sun-and-moon > .sun-beams {
+  opacity: 0;
+  -webkit-transform: rotateZ(-25deg);
+          transform: rotateZ(-25deg);
+  -webkit-transition-duration: .15s;
+          transition-duration: .15s;
+}
+
+html[data-theme='dark'] .sun-and-moon > .moon > circle {
+  -webkit-transform: translateX(-7px);
+          transform: translateX(-7px);
+}
+
+@supports (cx: 1) {
+  html[data-theme='dark'] .sun-and-moon > .moon > circle {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    cx: 17;
+  }
 }
 
 .header-container {
