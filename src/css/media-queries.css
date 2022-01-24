@@ -40,6 +40,10 @@ html[data-theme='dark'] {
   --text-accent: var(--color-accent-100);
 }
 
+html[data-theme='dark'] img {
+  filter: brightness(.8) saturate(1.25);
+}
+
 /* html[data-theme='dark'] #home-header-image {
   background-image: url(/images/portfolio-image-dark-theme.webp);
   background-size: contain;
