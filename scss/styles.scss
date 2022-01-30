@@ -536,8 +536,19 @@ html[data-theme='dark'] {
       background-color: var(--bg-secondary);
       border-radius: 0.5rem;
       padding: 1rem;
+      overflow: hidden;
+
       .blog-image {
+        aspect-ratio: 1/1;
+        object-fit: cover;
         max-width: 100%;
+        transition: filter .3s ease,
+                    transform .3s ease;
+
+        &:hover {
+          filter: none;
+          transform: scale(1.05);
+        }
       }
 
       h3,

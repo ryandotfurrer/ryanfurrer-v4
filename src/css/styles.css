@@ -615,10 +615,25 @@ html[data-theme='dark'] .sun-and-moon > .moon > circle {
   background-color: var(--bg-secondary);
   border-radius: 0.5rem;
   padding: 1rem;
+  overflow: hidden;
 }
 
 #blog-container #blog-articles-container div .blog-image {
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
   max-width: 100%;
+  -webkit-transition: -webkit-filter .3s ease, -webkit-transform .3s ease;
+  transition: -webkit-filter .3s ease, -webkit-transform .3s ease;
+  transition: filter .3s ease, transform .3s ease;
+  transition: filter .3s ease, transform .3s ease, -webkit-filter .3s ease, -webkit-transform .3s ease;
+}
+
+#blog-container #blog-articles-container div .blog-image:hover {
+  -webkit-filter: none;
+          filter: none;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 #blog-container #blog-articles-container div h3,
