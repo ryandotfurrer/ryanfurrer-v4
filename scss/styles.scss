@@ -327,7 +327,10 @@ html[data-theme='dark'] {
   .header {
     .header-image-container {
       .header-image {
-        width: 100%;
+        border-radius: 50%;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+        width: 80%;
       }
     }
 

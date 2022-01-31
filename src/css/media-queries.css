@@ -313,6 +313,7 @@ html[data-theme='dark'] img {
     border: none;
     color: var(--text-secondary);
     font-size: 2rem;
+    justify-content: start;
     margin: 0;
     padding: 0;
     transition: color 0.3s ease;
