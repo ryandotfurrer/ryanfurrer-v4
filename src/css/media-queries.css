@@ -24,11 +24,6 @@ html[data-theme='light']{
   --text-accent: var(--color-accent-200);
 }
 
-/* html[data-theme='light'] #home-header-image {
-  background-image: url(/images/portfolio-image-light-theme.webp);
-  background-size: contain;
-} */
-
 /* Assigns Dark Theme colors to appropriate colors */
 /* .dark class is added onto the HTML element via theme-change.js in the js folder */
 html[data-theme='dark'] {
@@ -43,11 +38,6 @@ html[data-theme='dark'] {
 html[data-theme='dark'] img {
   filter: brightness(.8) saturate(1.25);
 }
-
-/* html[data-theme='dark'] #home-header-image {
-  background-image: url(/images/portfolio-image-dark-theme.webp);
-  background-size: contain;
-} */
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
@@ -66,6 +56,13 @@ html[data-theme='dark'] img {
   }
 }
 
+@media only screen and (max-width: 400px) {
+  #projects .wrapper .tabs .tablist button {
+    font-size: smaller;
+  }
+}
+
+/*-----Mobile Nav Styling-----*/
 @media only screen and (max-width: 1023px) {
   #mobile-navlist {
     margin-top: 1.85rem;

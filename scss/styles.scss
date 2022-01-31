@@ -457,7 +457,7 @@ html[data-theme='dark'] {
       .tablist {
         border-bottom: 1px solid var(--text-secondary);
         display: flex;
-        gap: 0 1.5rem;
+        justify-content: space-around;
         margin-bottom: 1.5rem;
 
         // Reset button styling
