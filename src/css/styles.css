@@ -385,6 +385,10 @@ html[data-theme='dark'] .sun-and-moon > .moon > circle {
   width: 80%;
 }
 
+.header-container .header .header-image-container #home-header-image {
+  border-radius: 0;
+}
+
 .header-container .header .header-text {
   margin-top: 6rem;
 }
