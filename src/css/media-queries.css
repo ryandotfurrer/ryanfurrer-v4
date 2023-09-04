@@ -1,12 +1,12 @@
 /* Establish base colors using CSS Variables */
 :root {
-	--color-light-100: #f0f6fa;
-	--color-light-150: #d9e8f2;
-	--color-light-200: #a5bbca;
+	--color-light-100: #f8f9fa;
+	--color-light-150: #e9ecef;
+	--color-light-200: #ced4da;
 
-	--color-dark-100: #394c56;
-	--color-dark-150: #263640;
-	--color-dark-200: #1c2830;
+	--color-dark-100: #495057;
+	--color-dark-150: #212529;
+	--color-dark-200: #16191d;
 
 	--color-accent-100: #6ed6ac;
 	--color-accent-200: #41906b;
