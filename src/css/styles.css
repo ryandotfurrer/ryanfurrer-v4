@@ -56,7 +56,13 @@
 	display: inline-block;
 }
 
-.styled-link:hover {
+.styled-link,
+.nav-link {
+	text-decoration: none;
+}
+
+.styled-link:hover,
+.nav-link:hover {
 	text-decoration: none;
 }
 
@@ -157,13 +163,13 @@ p small > a {
 	font-weight: bolder;
 }
 
-a {
+/* a {
 	text-decoration: none;
 }
 
 a:hover {
 	text-decoration: underline;
-}
+} */
 
 p,
 a,
@@ -879,6 +885,11 @@ html[data-theme='dark'] .sun-and-moon > .moon > circle {
 #footer .footer-container #newsletter #revue-embed .revue-form-footer > p {
 	line-height: 1;
 	margin-bottom: 1.5rem;
+}
+
+.two-col-grid > #contact > a,
+.two-col-grid > #sitemap > ul > li > a {
+	text-decoration: none;
 }
 
 .form-section {
